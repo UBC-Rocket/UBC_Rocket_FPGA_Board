@@ -1,0 +1,17 @@
+vlib work
+vmap -c
+vlog  hdl_generation_2_pkg.sv
+vlog  nfp_add_single.sv
+vlog  nfp_sub_single.sv
+vlog  nfp_mul_single.sv
+vlog  Discrete_PID_Controller.sv
+vlog  nfp_uminus_single.sv
+vlog  nfp_gain_pow2_single.sv
+vlog  nfp_asin_single.sv
+vlog  nfp_atan2_single.sv
+vlog  nfp_relop_single.sv
+vlog  nfp_relop_single_block.sv
+vlog  nfp_signum_single.sv
+vlog  nfp_sqrt_single.sv
+vlog  nfp_sincos_single.sv
+vlog  hdl_generation_2.sv

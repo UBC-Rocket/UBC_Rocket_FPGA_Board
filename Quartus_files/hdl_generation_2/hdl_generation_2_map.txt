@@ -1,0 +1,15 @@
+hdl_generation_2/nfp_add_single --> nfp_add_single
+hdl_generation_2/nfp_sub_single --> nfp_sub_single
+hdl_generation_2/nfp_mul_single --> nfp_mul_single
+hdl_generation_2/Discrete PID Controller --> Discrete_PID_Controller
+hdl_generation_2/nfp_uminus_single --> nfp_uminus_single
+hdl_generation_2/nfp_gain_pow2_single --> nfp_gain_pow2_single
+hdl_generation_2/nfp_asin_single --> nfp_asin_single
+hdl_generation_2/nfp_atan2_single --> nfp_atan2_single
+hdl_generation_2/nfp_relop_single --> nfp_relop_single
+hdl_generation_2/nfp_relop_single --> nfp_relop_single_block
+hdl_generation_2/nfp_signum_single --> nfp_signum_single
+hdl_generation_2/nfp_sqrt_single --> nfp_sqrt_single
+hdl_generation_2/nfp_sincos_single --> nfp_sincos_single
+hdl_generation_2 --> hdl_generation_2
+ --> hdl_generation_2_pkg
