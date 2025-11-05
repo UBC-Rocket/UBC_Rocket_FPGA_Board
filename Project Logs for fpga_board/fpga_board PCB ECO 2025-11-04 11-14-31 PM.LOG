@@ -1,0 +1,283 @@
+Removed Member From Class: ClassName=FPGA1 Member=C?
+Change Component Designator: OldDesignator=100MHZ NewDesignator=100MHZ CLK
+Change Component Designator: OldDesignator=250MHZ NewDesignator=250 MHZ CLK
+Change Component Designator: OldDesignator=300MHZ NewDesignator=300MHZ CLK
+Add component: Footprint Not Found SOP80P1176X120-54N
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found QFP50P2200X2200X165-145N
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Added Component: Designator=R?(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R?(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=U7(EQFP144_A-165_D2-54_M)
+Add component (AddParameter): Name = "Code_JEDEC"; Value = "MS-026-BFB-HD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.altera.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Handbook"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.altera.com/literature/hb/cyclone-iv/cyclone4-handbook.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Pinout"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.altera.com/literature/lit-dp.jsp?category=cyc%204&showspreadsheet=y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.altera.com/devicepackaging/04R00402-00.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "ver1.6, Nov-2011"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Altera"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "144-Pin Plastic Enhanced Quad Flat Pack (EQFP) - Wire Bond - A:1.65 - D2:5.4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "EQFP144_A-165_D2-54"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "ver1.0, Jan-2011"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin DRAM-2
+Add Pin To Net: Unknown Pin: Pin DRAM-4
+Add Pin To Net: Unknown Pin: Pin DRAM-5
+Add Pin To Net: Unknown Pin: Pin DRAM-6
+Add Pin To Net: Unknown Pin: Pin DRAM-7
+Add Pin To Net: Unknown Pin: Pin DRAM-8
+Add Pin To Net: Unknown Pin: Pin DRAM-10
+Add Pin To Net: Unknown Pin: Pin DRAM-11
+Add Pin To Net: Unknown Pin: Pin DRAM-12
+Add Pin To Net: Unknown Pin: Pin DRAM-13
+Add Pin To Net: Unknown Pin: Pin DRAM-15
+Add Pin To Net: Unknown Pin: Pin DRAM-16
+Add Pin To Net: Unknown Pin: Pin DRAM-17
+Add Pin To Net: Unknown Pin: Pin DRAM-18
+Add Pin To Net: Unknown Pin: Pin DRAM-19
+Add Pin To Net: Unknown Pin: Pin DRAM-20
+Add Pin To Net: Unknown Pin: Pin DRAM-21
+Add Pin To Net: Unknown Pin: Pin DRAM-22
+Add Pin To Net: Unknown Pin: Pin DRAM-23
+Add Pin To Net: Unknown Pin: Pin DRAM-24
+Add Pin To Net: Unknown Pin: Pin DRAM-25
+Add Pin To Net: Unknown Pin: Pin DRAM-26
+Add Pin To Net: Unknown Pin: Pin DRAM-28
+Add Pin To Net: Unknown Pin: Pin DRAM-29
+Add Pin To Net: Unknown Pin: Pin DRAM-30
+Add Pin To Net: Unknown Pin: Pin DRAM-31
+Add Pin To Net: Unknown Pin: Pin DRAM-32
+Add Pin To Net: Unknown Pin: Pin DRAM-33
+Add Pin To Net: Unknown Pin: Pin DRAM-34
+Add Pin To Net: Unknown Pin: Pin DRAM-35
+Add Pin To Net: Unknown Pin: Pin DRAM-36
+Add Pin To Net: Unknown Pin: Pin DRAM-37
+Add Pin To Net: Unknown Pin: Pin DRAM-38
+Add Pin To Net: Unknown Pin: Pin DRAM-39
+Add Pin To Net: Unknown Pin: Pin DRAM-41
+Add Pin To Net: Unknown Pin: Pin DRAM-42
+Add Pin To Net: Unknown Pin: Pin DRAM-44
+Add Pin To Net: Unknown Pin: Pin DRAM-45
+Add Pin To Net: Unknown Pin: Pin DRAM-46
+Add Pin To Net: Unknown Pin: Pin DRAM-47
+Add Pin To Net: Unknown Pin: Pin DRAM-48
+Add Pin To Net: Unknown Pin: Pin DRAM-50
+Add Pin To Net: Unknown Pin: Pin DRAM-51
+Add Pin To Net: Unknown Pin: Pin DRAM-52
+Add Pin To Net: Unknown Pin: Pin DRAM-53
+Add Pin To Net: Unknown Pin: Pin DRAM-54
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin IC1-1
+Add Pin To Net: Unknown Pin: Pin IC1-2
+Add Pin To Net: Unknown Pin: Pin IC1-3
+Add Pin To Net: Unknown Pin: Pin IC1-4
+Add Pin To Net: Unknown Pin: Pin IC1-5
+Add Pin To Net: Unknown Pin: Pin IC1-6
+Add Pin To Net: Unknown Pin: Pin IC1-7
+Add Pin To Net: Unknown Pin: Pin IC1-8
+Add Pin To Net: Unknown Pin: Pin IC1-9
+Add Pin To Net: Unknown Pin: Pin IC1-10
+Add Pin To Net: Unknown Pin: Pin IC1-11
+Add Pin To Net: Unknown Pin: Pin IC1-12
+Add Pin To Net: Unknown Pin: Pin IC1-13
+Add Pin To Net: Unknown Pin: Pin IC1-14
+Add Pin To Net: Unknown Pin: Pin IC1-15
+Add Pin To Net: Unknown Pin: Pin IC1-16
+Add Pin To Net: Unknown Pin: Pin IC1-17
+Add Pin To Net: Unknown Pin: Pin IC1-18
+Add Pin To Net: Unknown Pin: Pin IC1-19
+Add Pin To Net: Unknown Pin: Pin IC1-20
+Add Pin To Net: Unknown Pin: Pin IC1-22
+Add Pin To Net: Unknown Pin: Pin IC1-23
+Add Pin To Net: Unknown Pin: Pin IC1-24
+Add Pin To Net: Unknown Pin: Pin IC1-25
+Add Pin To Net: Unknown Pin: Pin IC1-26
+Add Pin To Net: Unknown Pin: Pin IC1-27
+Add Pin To Net: Unknown Pin: Pin IC1-28
+Add Pin To Net: Unknown Pin: Pin IC1-29
+Add Pin To Net: Unknown Pin: Pin IC1-30
+Add Pin To Net: Unknown Pin: Pin IC1-31
+Add Pin To Net: Unknown Pin: Pin IC1-32
+Add Pin To Net: Unknown Pin: Pin IC1-33
+Add Pin To Net: Unknown Pin: Pin IC1-34
+Add Pin To Net: Unknown Pin: Pin IC1-35
+Add Pin To Net: Unknown Pin: Pin IC1-36
+Add Pin To Net: Unknown Pin: Pin IC1-37
+Add Pin To Net: Unknown Pin: Pin IC1-38
+Add Pin To Net: Unknown Pin: Pin IC1-39
+Add Pin To Net: Unknown Pin: Pin IC1-41
+Add Pin To Net: Unknown Pin: Pin IC1-42
+Add Pin To Net: Unknown Pin: Pin IC1-43
+Add Pin To Net: Unknown Pin: Pin IC1-44
+Add Pin To Net: Unknown Pin: Pin IC1-45
+Add Pin To Net: Unknown Pin: Pin IC1-47
+Add Pin To Net: Unknown Pin: Pin IC1-48
+Add Pin To Net: Unknown Pin: Pin IC1-49
+Add Pin To Net: Unknown Pin: Pin IC1-50
+Add Pin To Net: Unknown Pin: Pin IC1-51
+Add Pin To Net: Unknown Pin: Pin IC1-56
+Add Pin To Net: Unknown Pin: Pin IC1-57
+Add Pin To Net: Unknown Pin: Pin IC1-58
+Add Pin To Net: Unknown Pin: Pin IC1-59
+Add Pin To Net: Unknown Pin: Pin IC1-60
+Add Pin To Net: Unknown Pin: Pin IC1-61
+Add Pin To Net: Unknown Pin: Pin IC1-63
+Add Pin To Net: Unknown Pin: Pin IC1-64
+Add Pin To Net: Unknown Pin: Pin IC1-65
+Add Pin To Net: Unknown Pin: Pin IC1-66
+Add Pin To Net: Unknown Pin: Pin IC1-67
+Add Pin To Net: Unknown Pin: Pin IC1-68
+Add Pin To Net: Unknown Pin: Pin IC1-69
+Add Pin To Net: Unknown Pin: Pin IC1-70
+Add Pin To Net: Unknown Pin: Pin IC1-72
+Add Pin To Net: Unknown Pin: Pin IC1-73
+Add Pin To Net: Unknown Pin: Pin IC1-74
+Add Pin To Net: Unknown Pin: Pin IC1-76
+Add Pin To Net: Unknown Pin: Pin IC1-78
+Add Pin To Net: Unknown Pin: Pin IC1-79
+Add Pin To Net: Unknown Pin: Pin IC1-80
+Add Pin To Net: Unknown Pin: Pin IC1-81
+Add Pin To Net: Unknown Pin: Pin IC1-82
+Add Pin To Net: Unknown Pin: Pin IC1-83
+Add Pin To Net: Unknown Pin: Pin IC1-84
+Add Pin To Net: Unknown Pin: Pin IC1-85
+Add Pin To Net: Unknown Pin: Pin IC1-86
+Add Pin To Net: Unknown Pin: Pin IC1-90
+Add Pin To Net: Unknown Pin: Pin IC1-92
+Add Pin To Net: Unknown Pin: Pin IC1-93
+Add Pin To Net: Unknown Pin: Pin IC1-95
+Add Pin To Net: Unknown Pin: Pin IC1-98
+Add Pin To Net: Unknown Pin: Pin IC1-99
+Add Pin To Net: Unknown Pin: Pin IC1-100
+Add Pin To Net: Unknown Pin: Pin IC1-101
+Add Pin To Net: Unknown Pin: Pin IC1-102
+Add Pin To Net: Unknown Pin: Pin IC1-103
+Add Pin To Net: Unknown Pin: Pin IC1-104
+Add Pin To Net: Unknown Pin: Pin IC1-105
+Add Pin To Net: Unknown Pin: Pin IC1-106
+Add Pin To Net: Unknown Pin: Pin IC1-107
+Add Pin To Net: Unknown Pin: Pin IC1-108
+Add Pin To Net: Unknown Pin: Pin IC1-109
+Add Pin To Net: Unknown Pin: Pin IC1-110
+Add Pin To Net: Unknown Pin: Pin IC1-116
+Add Pin To Net: Unknown Pin: Pin IC1-117
+Add Pin To Net: Unknown Pin: Pin IC1-118
+Add Pin To Net: Unknown Pin: Pin IC1-119
+Add Pin To Net: Unknown Pin: Pin IC1-120
+Add Pin To Net: Unknown Pin: Pin IC1-121
+Add Pin To Net: Unknown Pin: Pin IC1-122
+Add Pin To Net: Unknown Pin: Pin IC1-123
+Add Pin To Net: Unknown Pin: Pin IC1-124
+Add Pin To Net: Unknown Pin: Pin IC1-130
+Add Pin To Net: Unknown Pin: Pin IC1-131
+Add Pin To Net: Unknown Pin: Pin IC1-132
+Add Pin To Net: Unknown Pin: Pin IC1-133
+Add Pin To Net: Unknown Pin: Pin IC1-134
+Add Pin To Net: Unknown Pin: Pin IC1-135
+Add Pin To Net: Unknown Pin: Pin IC1-136
+Add Pin To Net: Unknown Pin: Pin IC1-137
+Add Pin To Net: Unknown Pin: Pin IC1-138
+Add Pin To Net: Unknown Pin: Pin IC1-139
+Add Pin To Net: Unknown Pin: Pin IC1-140
+Add Pin To Net: Unknown Pin: Pin IC1-141
+Add Pin To Net: Unknown Pin: Pin IC1-142
+Add Pin To Net: Unknown Pin: Pin IC1-143
+Add Pin To Net: Unknown Pin: Pin IC1-144
+Add Pin To Net: Unknown Pin: Pin IC1-145
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Added Pin To Net: NetName=FPGA_CLK Pin=R?-2
+Added Pin To Net: NetName=FPGA_DO Pin=R?-2
+Added Pin To Net: NetName=IO7 Pin=U7-1
+Added Pin To Net: NetName=IO6 Pin=U7-2
+Added Pin To Net: NetName=IO5 Pin=U7-3
+Added Pin To Net: NetName=GND Pin=U7-4
+Added Pin To Net: NetName=GND Pin=U7-19
+Added Pin To Net: NetName=GND Pin=U7-22
+Added Pin To Net: NetName=GND Pin=U7-27
+Added Pin To Net: NetName=IO8 Pin=U7-34
+Added Pin To Net: NetName=GND Pin=U7-41
+Added Pin To Net: NetName=GND Pin=U7-48
+Added Pin To Net: NetName=GND Pin=U7-57
+Added Pin To Net: NetName=GND Pin=U7-63
+Added Pin To Net: NetName=IO9 Pin=U7-69
+Added Pin To Net: NetName=IO4 Pin=U7-73
+Added Pin To Net: NetName=IO3 Pin=U7-74
+Added Pin To Net: NetName=IO2 Pin=U7-75
+Added Pin To Net: NetName=GND Pin=U7-79
+Added Pin To Net: NetName=GND Pin=U7-82
+Added Pin To Net: NetName=IO1 Pin=U7-83
+Added Pin To Net: NetName=GND Pin=U7-95
+Added Pin To Net: NetName=GND Pin=U7-118
+Added Pin To Net: NetName=GND Pin=U7-123
+Added Pin To Net: NetName=GND Pin=U7-131
+Added Pin To Net: NetName=GND Pin=U7-140
+Added Pin To Net: NetName=GND Pin=U7-145
+Change Net Name : Old Net Name=NetR?_2 New Net Name=FPGA_DI
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Added Pin To Net: NetName=JTAG TCK Pin=U7-16
+Added Net: Name=JTAG TCK
+Added Pin To Net: NetName=JTAG TDI Pin=U7-15
+Added Net: Name=JTAG TDI
+Added Pin To Net: NetName=JTAG TDO Pin=U7-20
+Added Net: Name=JTAG TDO
+Added Pin To Net: NetName=JTAG TMS Pin=U7-18
+Added Net: Name=JTAG TMS
+Added Class: Name=FPGA2
+Add Differential Pair: Number of nets in differential pair NetJ1_A6 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetJ1_A7 is 1 instead of 2
+Add Class Member: Failed to add class member : Component DRAM AS4C16M16SA-7TCN
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component IC1 10CL016YE144C8G
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
