@@ -1,2 +1,2 @@
 Flash SPI=FLASH_CLK,FLASH_DO,FLASH MEM CS,FLASH DI
-SDRAM=
+SDRAM=Data Bit 0,Data Bit 1,Data Bit 2,Data Bit 3,Data Bit 4
