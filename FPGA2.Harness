@@ -1,4 +1,4 @@
 Flash SPI=FLASH_CLK,FLASH_DO,FLASH MEM CS,FLASH DI
 FPGA IO=IO1,IO2,IO3,IO4,IO5,IO6,IO7,IO8,IO9
 JTAG=JTAG TDO,JTAG TDI,JTAG TCK,JTAG TMS
-SDRAM=
+SDRAM=Data Bit 0,Data Bit 1,Data Bit 2,Data Bit 3,Data Bit 4,Data Bit 5,Data Bit 6,Data Bit 7,Data Bit 8,Data Bit 9,Data Bit 10,Data Bit 11,Data Bit 12,Data Bit 13,Data Bit 14,Data Bit 15
