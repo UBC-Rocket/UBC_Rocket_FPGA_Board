@@ -1,0 +1,71 @@
+Removed Member From Class: ClassName=Memory Member=R
+Removed Member From Class: ClassName=USB_PHY Member=R
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Added Component: Designator=R31(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R32(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Added Pin To Net: NetName=Data Bit 10 Pin=R31-1
+Added Pin To Net: NetName=Data Bit 10 Term Pin=R31-2
+Added Pin To Net: NetName=Data Bit 11 Pin=R32-1
+Added Pin To Net: NetName=Data Bit 11 Term Pin=R32-2
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Differential Pair: Number of nets in differential pair NetJ1_A6 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetJ1_A7 is 1 instead of 2
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=FPGA2 Member=Component R31 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R32 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R? RT0402BRE0750RL
+Added Member To Class: ClassName=Memory Member=Component R? RT0402BRE0750RL
+Added Member To Class: ClassName=USB_PHY Member=Component R? RC0603FR-0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL

@@ -1,0 +1,411 @@
+Removed Pin From Net: NetName=1.25V_OUT Pin=C8-1
+Removed Pin From Net: NetName=GND Pin=C_FGPA9\-1
+Removed Pin From Net: NetName=3.3V Pin=C_FGPA9\-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA1-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA1-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA2-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA2-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA3-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA3-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA4-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA4-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA5-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA5-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA6-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA6-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA7-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA7-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA8-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA8-2
+Removed Pin From Net: NetName=GND Pin=C_FPGA_10-1
+Removed Pin From Net: NetName=3.3V Pin=C_FPGA_10-2
+Removed Pin From Net: NetName=GND Pin=C_RAM3-1
+Removed Pin From Net: NetName=GND Pin=C_RAM4-1
+Removed Pin From Net: NetName=GND Pin=C_RAM5-1
+Removed Pin From Net: NetName=GND Pin=C_RAM6-2
+Removed Pin From Net: NetName=GND Pin=C_RAM7-2
+Removed Pin From Net: NetName=GND Pin=C_RAM_1-1
+Removed Pin From Net: NetName=GND Pin=C_RAM_2-1
+Removed Pin From Net: NetName=1.25V_OUT Pin=L1-2
+Removed Pin From Net: NetName=nSRST Pin=P1-9
+Removed Pin From Net: NetName=nSRST Pin=P2-2
+Removed Pin From Net: NetName=nSRST Pin=P2-9
+Removed Pin From Net: NetName=nSRST Pin=P2-10
+Removed Pin From Net: NetName=GND Pin=R3-1
+Removed Pin From Net: NetName=\ Pin=R4_t-1
+Removed Pin From Net: NetName=\ Pin=R_1-1
+Removed Pin From Net: NetName=\ Pin=reyetert-1
+Removed Pin From Net: NetName=nSRST Pin=RJ_2-1
+Removed Pin From Net: NetName=+3.3 Pin=RJ_2-2
+Removed Pin From Net: NetName=VUSB Pin=RJ_4-1
+Removed Pin From Net: NetName=\ Pin=RRAM2-1
+Removed Pin From Net: NetName=\ Pin=RRAM3-1
+Removed Pin From Net: NetName=\ Pin=RRAM5-1
+Removed Pin From Net: NetName=\ Pin=RRAM6-1
+Removed Pin From Net: NetName=GND Pin=RRAM9-1
+Removed Pin From Net: NetName=\ Pin=RRAM-1
+Removed Pin From Net: NetName=\ Pin=RRAM?-1
+Removed Pin From Net: NetName=nSRST Pin=U2-13
+Removed Pin From Net: NetName=nSRST Pin=U2-18
+Removed Pin From Net: NetName=nSRST Pin=U2-22
+Removed Member From Class: ClassName=FPGA1 Member=C_FGPA9\
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA1
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA2
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA3
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA4
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA5
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA6
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA7
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA8
+Removed Member From Class: ClassName=FPGA1 Member=C_FPGA_10
+Removed Member From Class: ClassName=Memory Member=C_RAM3
+Removed Member From Class: ClassName=Memory Member=C_RAM4
+Removed Member From Class: ClassName=Memory Member=C_RAM5
+Removed Member From Class: ClassName=Memory Member=C_RAM6
+Removed Member From Class: ClassName=Memory Member=C_RAM7
+Removed Member From Class: ClassName=Memory Member=C_RAM_1
+Removed Member From Class: ClassName=Memory Member=C_RAM_2
+Removed Member From Class: ClassName=Power Member=R3
+Removed Member From Class: ClassName=FPGA1 Member=R4_t
+Removed Member From Class: ClassName=FPGA1 Member=R_1
+Removed Member From Class: ClassName=FPGA1 Member=reyetert
+Removed Member From Class: ClassName=USB_PHY Member=RJ_2
+Removed Member From Class: ClassName=Memory Member=RRAM2
+Removed Member From Class: ClassName=Memory Member=RRAM3
+Removed Member From Class: ClassName=Memory Member=RRAM5
+Removed Member From Class: ClassName=Memory Member=RRAM6
+Removed Member From Class: ClassName=Memory Member=RRAM9
+Removed Member From Class: ClassName=Memory Member=RRAM?
+Removed Member From Class: ClassName=Memory Member=RRAM
+Change Component Designator: OldDesignator=B? NewDesignator=B1
+Change Component Designator: OldDesignator=R? NewDesignator=R
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Added Component: Designator=R20(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R21(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R23(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R24(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R25(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R26(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R27(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R28(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R29(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R30(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=B1-1
+Added Pin To Net: NetName=VCC Pin=B1-14
+Added Pin To Net: NetName=VCC Pin=B1-27
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=1.2V Pin=U7-5
+Added Pin To Net: NetName=1.2V Pin=U7-29
+Added Pin To Net: NetName=2.5V Pin=U7-35
+Added Pin To Net: NetName=1.2V Pin=U7-37
+Added Pin To Net: NetName=1.2V Pin=U7-45
+Added Pin To Net: NetName=1.2V Pin=U7-61
+Added Pin To Net: NetName=1.2V Pin=U7-78
+Added Pin To Net: NetName=1.2V Pin=U7-102
+Added Pin To Net: NetName=2.5V Pin=U7-107
+Added Pin To Net: NetName=1.2V Pin=U7-109
+Added Pin To Net: NetName=1.2V Pin=U7-116
+Added Pin To Net: NetName=1.2V Pin=U7-134
+Change Net Name : Old Net Name=1.25V_OUT New Net Name=1.2V_OUT
+Change Net Name : Old Net Name=1.25V_POWER_OUT New Net Name=1.2V_POWER_OUT
+Change Net Name : Old Net Name=nSRST New Net Name=TMS
+Change Net Name : Old Net Name=VUSB New Net Name=VBUS
+Added Pin To Net: NetName=1.25V_OUT Pin=C8-1
+Added Pin To Net: NetName=1.25V_OUT Pin=L1-2
+Added Net: Name=1.25V_OUT
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Added Pin To Net: NetName=Bank Select 0 Pin=B1-20
+Added Net: Name=Bank Select 0
+Added Pin To Net: NetName=Bank Select 1 Pin=B1-21
+Added Net: Name=Bank Select 1
+Added Pin To Net: NetName=Data Bit 0 Term Pin=R20-2
+Added Pin To Net: NetName=Data Bit 0 Term Pin=U7-13
+Added Net: Name=Data Bit 0 Term
+Added Pin To Net: NetName=Data Bit 0 Pin=B1-2
+Added Pin To Net: NetName=Data Bit 0 Pin=R20-1
+Added Net: Name=Data Bit 0
+Added Pin To Net: NetName=Data Bit 1 Term Pin=R21-2
+Added Pin To Net: NetName=Data Bit 1 Term Pin=U7-11
+Added Net: Name=Data Bit 1 Term
+Added Pin To Net: NetName=Data Bit 1 Pin=B1-4
+Added Pin To Net: NetName=Data Bit 1 Pin=R21-1
+Added Net: Name=Data Bit 1
+Added Pin To Net: NetName=Data Bit 2 Term Pin=R23-2
+Added Pin To Net: NetName=Data Bit 2 Term Pin=U7-10
+Added Net: Name=Data Bit 2 Term
+Added Pin To Net: NetName=Data Bit 2 Pin=B1-5
+Added Pin To Net: NetName=Data Bit 2 Pin=R23-1
+Added Net: Name=Data Bit 2
+Added Pin To Net: NetName=Data Bit 3 Term Pin=R24-2
+Added Pin To Net: NetName=Data Bit 3 Term Pin=U7-28
+Added Net: Name=Data Bit 3 Term
+Added Pin To Net: NetName=Data Bit 3 Pin=B1-7
+Added Pin To Net: NetName=Data Bit 3 Pin=R24-1
+Added Net: Name=Data Bit 3
+Added Pin To Net: NetName=Data Bit 4 Term Pin=R25-2
+Added Pin To Net: NetName=Data Bit 4 Term Pin=U7-53
+Added Net: Name=Data Bit 4 Term
+Added Pin To Net: NetName=Data Bit 4 Pin=B1-8
+Added Pin To Net: NetName=Data Bit 4 Pin=R25-1
+Added Net: Name=Data Bit 4
+Added Pin To Net: NetName=Data Bit 5 Term Pin=R26-2
+Added Pin To Net: NetName=Data Bit 5 Term Pin=U7-52
+Added Net: Name=Data Bit 5 Term
+Added Pin To Net: NetName=Data Bit 5 Pin=B1-10
+Added Pin To Net: NetName=Data Bit 5 Pin=R26-1
+Added Net: Name=Data Bit 5
+Added Pin To Net: NetName=Data Bit 6 Term Pin=R27-2
+Added Pin To Net: NetName=Data Bit 6 Term Pin=U7-51
+Added Net: Name=Data Bit 6 Term
+Added Pin To Net: NetName=Data Bit 6 Pin=B1-11
+Added Pin To Net: NetName=Data Bit 6 Pin=R27-1
+Added Net: Name=Data Bit 6
+Added Pin To Net: NetName=Data Bit 7 Term Pin=R28-2
+Added Pin To Net: NetName=Data Bit 7 Term Pin=U7-50
+Added Net: Name=Data Bit 7 Term
+Added Pin To Net: NetName=Data Bit 7 Pin=B1-13
+Added Pin To Net: NetName=Data Bit 7 Pin=R28-1
+Added Net: Name=Data Bit 7
+Added Pin To Net: NetName=Data Bit 8 Term Pin=R29-2
+Added Pin To Net: NetName=Data Bit 8 Term Pin=U7-49
+Added Net: Name=Data Bit 8 Term
+Added Pin To Net: NetName=Data Bit 8 Pin=B1-42
+Added Pin To Net: NetName=Data Bit 8 Pin=R29-1
+Added Net: Name=Data Bit 8
+Added Pin To Net: NetName=Data Bit 9 Term Pin=R30-2
+Added Pin To Net: NetName=Data Bit 9 Term Pin=U7-46
+Added Net: Name=Data Bit 9 Term
+Added Pin To Net: NetName=Data Bit 9 Pin=B1-44
+Added Pin To Net: NetName=Data Bit 9 Pin=R30-1
+Added Net: Name=Data Bit 9
+Added Pin To Net: NetName=Data Bit 10 Term Pin=U7-39
+Added Net: Name=Data Bit 10 Term
+Added Pin To Net: NetName=Data Bit 10 Pin=B1-45
+Added Net: Name=Data Bit 10
+Added Pin To Net: NetName=Data Bit 11 Term Pin=U7-38
+Added Net: Name=Data Bit 11 Term
+Added Pin To Net: NetName=Data Bit 11 Pin=B1-47
+Added Net: Name=Data Bit 11
+Added Pin To Net: NetName=Data Bit 12 Term Pin=U7-72
+Added Net: Name=Data Bit 12 Term
+Added Pin To Net: NetName=Data Bit 12 Pin=B1-48
+Added Net: Name=Data Bit 12
+Added Pin To Net: NetName=Data Bit 13 Term Pin=U7-71
+Added Net: Name=Data Bit 13 Term
+Added Pin To Net: NetName=Data Bit 13 Pin=B1-50
+Added Net: Name=Data Bit 13
+Added Pin To Net: NetName=Data Bit 14 Term Pin=U7-70
+Added Net: Name=Data Bit 14 Term
+Added Pin To Net: NetName=Data Bit 14 Pin=B1-51
+Added Net: Name=Data Bit 14
+Added Pin To Net: NetName=Data Bit 15 Term Pin=U7-64
+Added Net: Name=Data Bit 15 Term
+Added Pin To Net: NetName=Data Bit 15 Pin=B1-53
+Added Net: Name=Data Bit 15
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Added Pin To Net: NetName=nSRST Pin=P2-10
+Added Pin To Net: NetName=nSRST Pin=U2-22
+Added Net: Name=nSRST
+Added Pin To Net: NetName=nTRST Pin=P2-2
+Added Pin To Net: NetName=nTRST Pin=U2-13
+Added Net: Name=nTRST
+Added Pin To Net: NetName=TDI Pin=P1-9
+Added Pin To Net: NetName=TDI Pin=P2-9
+Added Pin To Net: NetName=TDI Pin=U2-18
+Added Net: Name=TDI
+Added Pin To Net: NetName=VUSB Pin=RJ_4-1
+Added Net: Name=VUSB
+Add Differential Pair: Number of nets in differential pair NetJ1_A6 is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair NetJ1_A7 is 1 instead of 2
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=FPGA2 Member=Component R20 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R21 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R23 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R24 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R25 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R26 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R27 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R28 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R29 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R30 RT0402BRE0750RL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=FPGA2 Member=Component R RT0402BRE0750RL
