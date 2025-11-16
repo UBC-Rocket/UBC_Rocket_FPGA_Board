@@ -1,0 +1,294 @@
+module SUM (clk, areset, start, a, b, q, finish);
+    input logic clk, areset, start;
+    input logic [31:0] a;
+    input logic [31:0] b;
+    output logic [31:0] q;
+    output logic finish;
+
+    // STAGE 0: Input register
+    logic [31:0] a_s0, b_s0;
+    logic        a_zero_s0, b_zero_s0;
+    logic        valid_s0;
+
+    always_ff @(posedge clk or posedge areset) begin
+        if (areset) begin
+            a_s0      <= 32'd0;
+            b_s0      <= 32'd0;
+            a_zero_s0 <= 1'b0;
+            b_zero_s0 <= 1'b0;
+            valid_s0  <= 1'b0;
+        end else begin
+            a_s0      <= a;
+            b_s0      <= b;
+            a_zero_s0 <= (a[30:23] == 8'd0 && a[22:0] == 23'd0);
+            b_zero_s0 <= (b[30:23] == 8'd0 && b[22:0] == 23'd0);
+            valid_s0  <= start;
+        end
+    end
+
+    // STAGE 1: Unpack, compare, align exponents
+    logic  sign_big_c1, sign_small_c1;
+    logic [7:0]  exp_big_c1;
+    logic [24:0] mant_big_c1, mant_small_shift_c1;
+    logic [31:0] a_c1, b_c1;
+    logic a_zero_c1, b_zero_c1;
+
+    always_comb begin
+        // pass-through
+        a_c1      = a_s0;
+        b_c1      = b_s0;
+        a_zero_c1 = a_zero_s0;
+        b_zero_c1 = b_zero_s0;
+
+        // unpack
+        logic sign_a, sign_b;
+        logic [7:0]  exp_a, exp_b;
+        logic [23:0] mant_a, mant_b;
+        logic [7:0]  exp_small;
+        logic [24:0] mant_small_tmp;
+        logic        sign_small_tmp;
+        logic [7:0]  exp_diff;
+
+        sign_a = a_s0[31];
+        sign_b = b_s0[31];
+        exp_a  = a_s0[30:23];
+        exp_b  = b_s0[30:23];
+
+        mant_a = (exp_a == 8'd0) ? {1'b0, a_s0[22:0]} : {1'b1, a_s0[22:0]};
+        mant_b = (exp_b == 8'd0) ? {1'b0, b_s0[22:0]} : {1'b1, b_s0[22:0]};
+
+        if ({exp_a, mant_a} >= {exp_b, mant_b}) begin
+            exp_big_c1      = exp_a;
+            mant_big_c1     = {1'b0, mant_a};
+            sign_big_c1     = sign_a;
+
+            exp_small       = exp_b;
+            mant_small_tmp  = {1'b0, mant_b};
+            sign_small_tmp  = sign_b;
+        end else begin
+            exp_big_c1      = exp_b;
+            mant_big_c1     = {1'b0, mant_b};
+            sign_big_c1     = sign_b;
+
+            exp_small       = exp_a;
+            mant_small_tmp  = {1'b0, mant_a};
+            sign_small_tmp  = sign_a;
+        end
+
+        exp_diff = exp_big_c1 - exp_small;
+
+        if (exp_diff >= 8'd25)
+            mant_small_shift_c1 = 25'd0;
+        else
+            mant_small_shift_c1 = mant_small_tmp >> exp_diff;
+
+        sign_small_c1 = sign_small_tmp;
+    end
+
+    // registers
+    logic  sign_big_s1, sign_small_s1;
+    logic [7:0]  exp_big_s1;
+    logic [24:0] mant_big_s1, mant_small_shift_s1;
+    logic [31:0] a_s1, b_s1;
+    logic  a_zero_s1, b_zero_s1;
+    logic  valid_s1;
+
+    always_ff @(posedge clk or posedge areset) begin
+        if (areset) begin
+            sign_big_s1        <= 1'b0;
+            sign_small_s1      <= 1'b0;
+            exp_big_s1         <= 8'd0;
+            mant_big_s1        <= 25'd0;
+            mant_small_shift_s1<= 25'd0;
+            a_s1               <= 32'd0;
+            b_s1               <= 32'd0;
+            a_zero_s1          <= 1'b0;
+            b_zero_s1          <= 1'b0;
+            valid_s1           <= 1'b0;
+        end else begin
+            sign_big_s1         <= sign_big_c1;
+            sign_small_s1       <= sign_small_c1;
+            exp_big_s1          <= exp_big_c1;
+            mant_big_s1         <= mant_big_c1;
+            mant_small_shift_s1 <= mant_small_shift_c1;
+
+            a_s1      <= a_c1;
+            b_s1      <= b_c1;
+            a_zero_s1 <= a_zero_c1;
+            b_zero_s1 <= b_zero_c1;
+
+            valid_s1  <= valid_s0;
+        end
+    end
+
+    // stage 2: Mantissa add/sub + carry normalize
+    logic [25:0] mant_sum_c2;
+    logic [24:0] mant_res_c2;
+    logic [7:0]  exp_res_c2;
+    logic        sign_res_c2;
+    logic        norm_from_carry_c2;
+
+    always_comb begin
+        // mantissa add/sub
+        if (sign_big_s1 == sign_small_s1) begin
+            mant_sum_c2 = mant_big_s1 + mant_small_shift_s1;
+            sign_res_c2 = sign_big_s1;
+        end else begin
+            mant_sum_c2 = mant_big_s1 - mant_small_shift_s1;
+            sign_res_c2 = sign_big_s1;
+        end
+
+        exp_res_c2 = exp_big_s1;
+
+        // handle carry-out (right normalization)
+        if (mant_sum_c2[25]) begin
+            mant_res_c2        = mant_sum_c2[25:1];
+            exp_res_c2         = exp_big_s1 + 8'd1;
+            norm_from_carry_c2 = 1'b1;
+        end else begin
+            mant_res_c2        = mant_sum_c2[24:0];
+            norm_from_carry_c2 = 1'b0;
+        end
+    end
+
+    // regs
+    logic [24:0] mant_res_s2;
+    logic [7:0]  exp_res_s2;
+    logic        sign_res_s2;
+    logic        norm_from_carry_s2;
+    logic [31:0] a_s2, b_s2;
+    logic        a_zero_s2, b_zero_s2;
+    logic        valid_s2;
+
+    always_ff @(posedge clk or posedge areset) begin
+        if (areset) begin
+            mant_res_s2        <= 25'd0;
+            exp_res_s2         <= 8'd0;
+            sign_res_s2        <= 1'b0;
+            norm_from_carry_s2 <= 1'b0;
+            a_s2               <= 32'd0;
+            b_s2               <= 32'd0;
+            a_zero_s2          <= 1'b0;
+            b_zero_s2          <= 1'b0;
+            valid_s2           <= 1'b0;
+        end else begin
+            mant_res_s2        <= mant_res_c2;
+            exp_res_s2         <= exp_res_c2;
+            sign_res_s2        <= sign_res_c2;
+            norm_from_carry_s2 <= norm_from_carry_c2;
+
+            a_s2      <= a_s1;
+            b_s2      <= b_s1;
+            a_zero_s2 <= a_zero_s1;
+            b_zero_s2 <= b_zero_s1;
+
+            valid_s2  <= valid_s1;
+        end
+    end
+
+    // Stage 3: Leading-zero norm (if needed) + pack + SP   
+    logic [31:0] q_c3;
+
+    always_comb begin
+        q_c3 = 32'd0;
+
+        if (!valid_s2) begin
+            // output will be ignored when finish=0
+            q_c3 = 32'd0;
+
+        end else if (a_zero_s2 && b_zero_s2) begin
+            q_c3 = 32'd0;
+
+        end else if (a_zero_s2) begin
+            q_c3 = b_s2;
+
+        end else if (b_zero_s2) begin
+            q_c3 = a_s2;
+
+        end else if (mant_res_s2 == 0) begin
+            q_c3 = 32'd0;
+
+        end else begin
+            // further normalization only if we DIDN'T already normalize via carry
+            logic [24:0] mant_norm;
+            logic [7:0]  exp_norm;
+            logic [5:0]  lz;
+            logic [7:0]  shift_amt;
+
+            mant_norm = mant_res_s2;
+            exp_norm  = exp_res_s2;
+
+            if (!norm_from_carry_s2 && mant_norm != 0) begin
+                // your original leading-zero chain
+                if      (mant_norm[24]) lz = 0;
+                else if (mant_norm[23]) lz = 1;
+                else if (mant_norm[22]) lz = 2;
+                else if (mant_norm[21]) lz = 3;
+                else if (mant_norm[20]) lz = 4;
+                else if (mant_norm[19]) lz = 5;
+                else if (mant_norm[18]) lz = 6;
+                else if (mant_norm[17]) lz = 7;
+                else if (mant_norm[16]) lz = 8;
+                else if (mant_norm[15]) lz = 9;
+                else if (mant_norm[14]) lz = 10;
+                else if (mant_norm[13]) lz = 11;
+                else if (mant_norm[12]) lz = 12;
+                else if (mant_norm[11]) lz = 13;
+                else if (mant_norm[10]) lz = 14;
+                else if (mant_norm[9])  lz = 15;
+                else if (mant_norm[8])  lz = 16;
+                else if (mant_norm[7])  lz = 17;
+                else if (mant_norm[6])  lz = 18;
+                else if (mant_norm[5])  lz = 19;
+                else if (mant_norm[4])  lz = 20;
+                else if (mant_norm[3])  lz = 21;
+                else if (mant_norm[2])  lz = 22;
+                else if (mant_norm[1])  lz = 23;
+                else if (mant_norm[0])  lz = 24;
+                else                    lz = 25;
+
+                if (exp_norm > lz)
+                    shift_amt = lz;
+                else
+                    shift_amt = exp_norm;
+
+                if (shift_amt >= 25) begin
+                    mant_norm = 25'd0;
+                    exp_norm  = 8'd0;
+                end else begin
+                    mant_norm = mant_norm << shift_amt;
+                    exp_norm  = exp_norm - shift_amt;
+                end
+            end
+
+            // pack & handle overflow/underflow
+            if (mant_norm == 0) begin
+                q_c3 = 32'd0;
+            end else if (exp_norm >= 8'd255) begin
+                q_c3 = {sign_res_s2, 8'hFF, 23'd0};       // +inf / -inf
+            end else if (exp_norm == 8'd0) begin
+                q_c3 = {sign_res_s2, 8'd0, 23'd0};        // underflow -> 0
+            end else begin
+                q_c3 = {sign_res_s2, exp_norm[7:0], mant_norm[23:1]};
+            end
+        end
+    end
+
+    // regs
+    logic [31:0] q_s3;
+    logic        valid_s3;
+
+    always_ff @(posedge clk or posedge areset) begin
+        if (areset) begin
+            q_s3     <= 32'd0;
+            valid_s3 <= 1'b0;
+        end else begin
+            q_s3     <= q_c3;
+            valid_s3 <= valid_s2;
+        end
+    end
+
+    assign q  = q_s3;
+    assign finish = valid_s3; // '1' exactly when q is valid
+
+endmodule

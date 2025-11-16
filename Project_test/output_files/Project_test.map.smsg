@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at sqrt.sv(70): always construct contains both blocking and non-blocking assignments File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sqrt.sv Line: 70
+Warning (10268): Verilog HDL information at div.sv(223): always construct contains both blocking and non-blocking assignments File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/div.sv Line: 223

@@ -1,0 +1,561 @@
+Analysis & Synthesis report for Project_test
+Sun Nov 09 23:19:00 2025
+Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Inverted Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |Project_test
+ 14. Port Connectivity Checks: "SUM:SUM_BLOCK[0].SUM_inst"
+ 15. Post-Synthesis Netlist Statistics for Top Partition
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 09 23:19:00 2025       ;
+; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
+; Revision Name                      ; Project_test                                ;
+; Top-level Entity Name              ; Project_test                                ;
+; Family                             ; Cyclone IV E                                ;
+; Total logic elements               ; 591                                         ;
+;     Total combinational functions  ; 480                                         ;
+;     Dedicated logic registers      ; 204                                         ;
+; Total registers                    ; 204                                         ;
+; Total pins                         ; 15                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE6E22C8        ;                    ;
+; Top-level entity name                                                      ; Project_test       ; Project_test       ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 10          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 10          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processors 6-10        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+; MULT.v                           ; yes             ; User Verilog HDL File              ; C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT.v          ; MULT    ;
+; project_test.sv                  ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv ;         ;
+; sum.sv                           ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv          ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 591           ;
+;                                             ;               ;
+; Total combinational functions               ; 480           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 246           ;
+;     -- 3 input functions                    ; 176           ;
+;     -- <=2 input functions                  ; 58            ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 417           ;
+;     -- arithmetic mode                      ; 63            ;
+;                                             ;               ;
+; Total registers                             ; 204           ;
+;     -- Dedicated logic registers            ; 204           ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 15            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; CLK_250~input ;
+; Maximum fan-out                             ; 204           ;
+; Total fan-out                               ; 2313          ;
+; Average fan-out                             ; 3.20          ;
++---------------------------------------------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Entity Name  ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+--------------+
+; |Project_test                  ; 480 (11)            ; 204 (9)                   ; 0           ; 0            ; 0       ; 0         ; 15   ; 0            ; |Project_test                           ; Project_test ; work         ;
+;    |SUM:SUM_BLOCK[0].SUM_inst| ; 469 (469)           ; 195 (195)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst ; SUM          ; work         ;
++--------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                            ;
++-------------------------------------------------------+-------------------------------------------------------+
+; Register name                                         ; Reason for Removal                                    ;
++-------------------------------------------------------+-------------------------------------------------------+
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[1..31]                 ; Stuck at GND due to stuck port data_in                ;
+; SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[24]             ; Stuck at GND due to stuck port data_in                ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s1[1..31]                 ; Stuck at GND due to stuck port data_in                ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s2[1..31]                 ; Stuck at GND due to stuck port data_in                ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s0[0]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|a_s0[0]         ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[0]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|a_s1[0]         ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s2[0]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|a_s2[0]         ;
+; SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[0]              ; Merged with SUM:SUM_BLOCK[0].SUM_inst|a_s1[0]         ;
+; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[24]     ; Stuck at GND due to stuck port data_in                ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[30]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[7]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[29]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[6]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[28]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[5]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[27]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[4]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[23]     ; Stuck at GND due to stuck port data_in                ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[1]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[1]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[2]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[2]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[22]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[22] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[21]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[21] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[20]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[20] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[19]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[19] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[18]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[18] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[17]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[17] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[16]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[16] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[15]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[15] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[14]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[14] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[13]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[13] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[12]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[12] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[11]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[11] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[10]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[10] ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[9]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[9]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[8]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[8]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[7]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[7]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[6]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[6]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[5]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[5]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[4]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[4]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[3]                     ; Merged with SUM:SUM_BLOCK[0].SUM_inst|mant_big_s1[3]  ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[23]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[0]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[26]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[3]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[25]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[2]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|b_s1[24]                    ; Merged with SUM:SUM_BLOCK[0].SUM_inst|exp_big_s1[1]   ;
+; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[20..22] ; Stuck at GND due to stuck port data_in                ;
+; Total Number of Removed Registers = 133               ;                                                       ;
++-------------------------------------------------------+-------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                              ;
++------------------------------------+---------------------------+-------------------------------------------------------------------------+
+; Register name                      ; Reason for Removal        ; Registers Removed due to This Register                                  ;
++------------------------------------+---------------------------+-------------------------------------------------------------------------+
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[30] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[30], SUM:SUM_BLOCK[0].SUM_inst|a_s2[30], ;
+;                                    ; due to stuck port data_in ; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[24],                      ;
+;                                    ;                           ; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[23],                      ;
+;                                    ;                           ; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[22],                      ;
+;                                    ;                           ; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[21],                      ;
+;                                    ;                           ; SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[20]                       ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[31] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[31], SUM:SUM_BLOCK[0].SUM_inst|a_s2[31]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[29] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[29], SUM:SUM_BLOCK[0].SUM_inst|a_s2[29]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[28] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[28], SUM:SUM_BLOCK[0].SUM_inst|a_s2[28]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[27] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[27], SUM:SUM_BLOCK[0].SUM_inst|a_s2[27]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[26] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[26], SUM:SUM_BLOCK[0].SUM_inst|a_s2[26]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[25] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[25], SUM:SUM_BLOCK[0].SUM_inst|a_s2[25]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[24] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[24], SUM:SUM_BLOCK[0].SUM_inst|a_s2[24]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[23] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[23], SUM:SUM_BLOCK[0].SUM_inst|a_s2[23]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[22] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[22], SUM:SUM_BLOCK[0].SUM_inst|a_s2[22]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[21] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[21], SUM:SUM_BLOCK[0].SUM_inst|a_s2[21]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[20] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[20], SUM:SUM_BLOCK[0].SUM_inst|a_s2[20]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[19] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[19], SUM:SUM_BLOCK[0].SUM_inst|a_s2[19]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[18] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[18], SUM:SUM_BLOCK[0].SUM_inst|a_s2[18]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[17] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[17], SUM:SUM_BLOCK[0].SUM_inst|a_s2[17]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[16] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[16], SUM:SUM_BLOCK[0].SUM_inst|a_s2[16]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[15] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[15], SUM:SUM_BLOCK[0].SUM_inst|a_s2[15]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[14] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[14], SUM:SUM_BLOCK[0].SUM_inst|a_s2[14]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[13] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[13], SUM:SUM_BLOCK[0].SUM_inst|a_s2[13]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[12] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[12], SUM:SUM_BLOCK[0].SUM_inst|a_s2[12]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[11] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[11], SUM:SUM_BLOCK[0].SUM_inst|a_s2[11]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[10] ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[10], SUM:SUM_BLOCK[0].SUM_inst|a_s2[10]  ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[9]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[9], SUM:SUM_BLOCK[0].SUM_inst|a_s2[9]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[8]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[8], SUM:SUM_BLOCK[0].SUM_inst|a_s2[8]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[7]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[7], SUM:SUM_BLOCK[0].SUM_inst|a_s2[7]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[6]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[6], SUM:SUM_BLOCK[0].SUM_inst|a_s2[6]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[5]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[5], SUM:SUM_BLOCK[0].SUM_inst|a_s2[5]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[4]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[4], SUM:SUM_BLOCK[0].SUM_inst|a_s2[4]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[3]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[3], SUM:SUM_BLOCK[0].SUM_inst|a_s2[3]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[2]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[2], SUM:SUM_BLOCK[0].SUM_inst|a_s2[2]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
+; SUM:SUM_BLOCK[0].SUM_inst|a_s0[1]  ; Stuck at GND              ; SUM:SUM_BLOCK[0].SUM_inst|a_s1[1], SUM:SUM_BLOCK[0].SUM_inst|a_s2[1]    ;
+;                                    ; due to stuck port data_in ;                                                                         ;
++------------------------------------+---------------------------+-------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 204   ;
+; Number of registers using Synchronous Clear  ; 2     ;
+; Number of registers using Synchronous Load   ; 25    ;
+; Number of registers using Asynchronous Clear ; 204   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; leds_chase[0]                          ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[20] ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[15] ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; Yes        ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[7]  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[2]  ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_small_shift_s1[0]  ;
+; 9:1                ; 30 bits   ; 180 LEs       ; 150 LEs              ; 30 LEs                 ; Yes        ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|q_s3[23]                ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|exp_norm                ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_norm               ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; No         ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_norm               ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_norm               ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; No         ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_norm               ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|mant_norm               ;
+; 23:1               ; 2 bits    ; 30 LEs        ; 28 LEs               ; 2 LEs                  ; No         ; |Project_test|SUM:SUM_BLOCK[0].SUM_inst|lz                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |Project_test ;
++------------------------------+-------+---------------------------------------+
+; Parameter Name               ; Value ; Type                                  ;
++------------------------------+-------+---------------------------------------+
+; NUMBER_OF_SUM_BLOCKS         ; 1     ; Signed Integer                        ;
+; NUMBER_OF_SUB_BLOCKS         ; 0     ; Signed Integer                        ;
+; NUMBER_OF_MULT_BLOCKS        ; 0     ; Signed Integer                        ;
+; NUMBER_OF_GAIN_BLOCKS        ; 0     ; Signed Integer                        ;
+; NUMBER_OF_SQRT_BLOCKS        ; 0     ; Signed Integer                        ;
+; NUMBER_OF_DOT_PRODUCT_BLOCKS ; 0     ; Signed Integer                        ;
+; NUMBER_OF_SAT_BLOCKS         ; 0     ; Signed Integer                        ;
+; NUMBER_OF_SIGNUM_BLOCKS      ; 0     ; Signed Integer                        ;
+; NUMBER_OF_ATAN2_BLOCKS       ; 2     ; Signed Integer                        ;
+; NUMBER_OF_ASIN_BLOCKS        ; 1     ; Signed Integer                        ;
+; NUMBER_OF_SIN_BLOCKS         ; 2     ; Signed Integer                        ;
+; NUMBER_OF_COS_BLOCKS         ; 3     ; Signed Integer                        ;
++------------------------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SUM:SUM_BLOCK[0].SUM_inst"                                                                                                                    ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                                                                                     ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; a      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "a[31..1]" will be connected to GND. ;
+; finish ; Output ; Info     ; Explicitly unconnected                                                                                                                      ;
+; start  ; Input  ; Info     ; Stuck at VCC                                                                                                                                ;
++--------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 15                          ;
+; cycloneiii_ff         ; 204                         ;
+;     CLR               ; 179                         ;
+;     CLR SCLR SLD      ; 2                           ;
+;     CLR SLD           ; 23                          ;
+; cycloneiii_lcell_comb ; 488                         ;
+;     arith             ; 63                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 16                          ;
+;         3 data inputs ; 46                          ;
+;     normal            ; 425                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 130                         ;
+;         4 data inputs ; 246                         ;
+;                       ;                             ;
+; Max LUT depth         ; 18.00                       ;
+; Average LUT depth     ; 8.93                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+    Info: Processing started: Sun Nov 09 23:18:42 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Project_test -c Project_test
+Warning (125092): Tcl Script File SQRT.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE SQRT.qip
+Warning (125092): Tcl Script File SIN.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE SIN.qip
+Warning (125092): Tcl Script File COS.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE COS.qip
+Warning (125092): Tcl Script File ATAN.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE ATAN.qip
+Warning (125092): Tcl Script File SUM.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE SUM.qip
+Warning (125092): Tcl Script File SUB.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE SUB.qip
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 10 of the 10 processors detected
+Info (12021): Found 0 design units, including 0 entities, in source file mult.v
+Info (12021): Found 1 design units, including 0 entities, in source file mult/dspba_library_package.vhd
+    Info (12022): Found design unit 1: dspba_library_package (mult) File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT/dspba_library_package.vhd Line: 16
+Info (12021): Found 4 design units, including 2 entities, in source file mult/dspba_library.vhd
+    Info (12022): Found design unit 1: dspba_delay-delay File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT/dspba_library.vhd Line: 33
+    Info (12022): Found design unit 2: dspba_sync_reg-sync_reg File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT/dspba_library.vhd Line: 115
+    Info (12023): Found entity 1: dspba_delay File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT/dspba_library.vhd Line: 17
+    Info (12023): Found entity 2: dspba_sync_reg File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT/dspba_library.vhd Line: 91
+Info (12021): Found 2 design units, including 1 entities, in source file mult/mult_0002.vhd
+    Info (12022): Found design unit 1: MULT_0002-normal File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT/MULT_0002.vhd Line: 44
+    Info (12023): Found entity 1: MULT_0002 File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/MULT/MULT_0002.vhd Line: 34
+Warning (10275): Verilog HDL Module Instantiation warning at project_test.sv(157): ignored dangling comma in List of Port Connections File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 157
+Warning (12125): Using design file project_test.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: Project_test File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 1
+Info (12127): Elaborating entity "Project_test" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(46): object "sub_in_a" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 46
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(46): object "sub_in_b" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 46
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(64): object "mult_in_a" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 64
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(64): object "mult_in_b" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 64
+Warning (10858): Verilog HDL warning at project_test.sv(65): object mult_out used but never assigned File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 65
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(83): object "gain_a" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 83
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(84): object "gain_b" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 84
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(102): object "sqrt_in" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 102
+Warning (10858): Verilog HDL warning at project_test.sv(103): object sqrt_out used but never assigned File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 103
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(119): object "dot_a_0" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 119
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(120): object "dot_a_1" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 120
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(121): object "dot_a_2" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 121
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(122): object "dot_b_0" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 122
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(123): object "dot_b_1" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 123
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(124): object "dot_b_2" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 124
+Warning (10858): Verilog HDL warning at project_test.sv(125): object dot_out used but never assigned File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 125
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(146): object "sat_in" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 146
+Warning (10858): Verilog HDL warning at project_test.sv(147): object sat_out used but never assigned File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 147
+Warning (10036): Verilog HDL or VHDL warning at project_test.sv(161): object "signum_in" assigned a value but never read File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 161
+Warning (10858): Verilog HDL warning at project_test.sv(162): object signum_out used but never assigned File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 162
+Warning (10230): Verilog HDL assignment warning at project_test.sv(254): truncated value with size 32 to match size of target (1) File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 254
+Warning (12125): Using design file sum.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: SUM File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 1
+Info (12128): Elaborating entity "SUM" for hierarchy "SUM:SUM_BLOCK[0].SUM_inst" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 42
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 25
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[0]~0" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[1]~2" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[2]~4" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[4]~6" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[5]~8" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[6]~10" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[7]~12" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+    Info (17048): Logic cell "SUM:SUM_BLOCK[0].SUM_inst|exp_diff[3]~14" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/sum.sv Line: 42
+Warning (20013): Ignored 13 assignments for entity "MULT" -- entity does not exist in design
+Warning (20013): Ignored 65 assignments for entity "MULT_0002" -- entity does not exist in design
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SWITCHES[0]" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 16
+    Warning (15610): No output dependent on input pin "SWITCHES[1]" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 16
+    Warning (15610): No output dependent on input pin "SWITCHES[2]" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 16
+    Warning (15610): No output dependent on input pin "SWITCHES[3]" File: C:/Users/a_abe/Desktop/Rocket_Work/UBC_Rocket_FPGA_Board/Project_test/project_test.sv Line: 16
+Info (21057): Implemented 637 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 622 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Sun Nov 09 23:19:00 2025
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:34
+
+

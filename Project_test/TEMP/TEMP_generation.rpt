@@ -1,0 +1,28 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\a_abe\Desktop\Rocket_Work\UBC_Rocket_FPGA_Board\Project_test\TEMP.qsys --block-symbol-file --output-directory=C:\Users\a_abe\Desktop\Rocket_Work\UBC_Rocket_FPGA_Board\Project_test\TEMP --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading Project_test/TEMP.qsys
+Progress: Reading input file
+Progress: Adding nios_custom_instr_floating_point_2_multi_0 [altera_nios_custom_instr_floating_point_2_multi 16.1]
+Progress: Parameterizing module nios_custom_instr_floating_point_2_multi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\a_abe\Desktop\Rocket_Work\UBC_Rocket_FPGA_Board\Project_test\TEMP.qsys --synthesis=VERILOG --output-directory=C:\Users\a_abe\Desktop\Rocket_Work\UBC_Rocket_FPGA_Board\Project_test\TEMP\synthesis --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading Project_test/TEMP.qsys
+Progress: Reading input file
+Progress: Adding nios_custom_instr_floating_point_2_multi_0 [altera_nios_custom_instr_floating_point_2_multi 16.1]
+Progress: Parameterizing module nios_custom_instr_floating_point_2_multi_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: TEMP: Generating TEMP "TEMP" for QUARTUS_SYNTH
+Info: nios_custom_instr_floating_point_2_multi_0: "TEMP" instantiated altera_nios_custom_instr_floating_point_2_multi "nios_custom_instr_floating_point_2_multi_0"
+Info: TEMP: Done "TEMP" with 2 modules, 15 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

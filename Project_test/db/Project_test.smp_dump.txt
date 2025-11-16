@@ -1,0 +1,21 @@
+
+State Machine - |Project_test|DOT_PRODUCT:DOT_PRODUCT_BLOCK[2].DOT_PRODUCT_inst|state
+Name state.S_WAIT_SUM1 state.S_WAIT_SUM0 state.S_WAIT_MUL state.S_IDLE 
+state.S_IDLE 0 0 0 0 
+state.S_WAIT_MUL 0 0 1 1 
+state.S_WAIT_SUM0 0 1 0 1 
+state.S_WAIT_SUM1 1 0 0 1 
+
+State Machine - |Project_test|DOT_PRODUCT:DOT_PRODUCT_BLOCK[1].DOT_PRODUCT_inst|state
+Name state.S_WAIT_SUM1 state.S_WAIT_SUM0 state.S_WAIT_MUL state.S_IDLE 
+state.S_IDLE 0 0 0 0 
+state.S_WAIT_MUL 0 0 1 1 
+state.S_WAIT_SUM0 0 1 0 1 
+state.S_WAIT_SUM1 1 0 0 1 
+
+State Machine - |Project_test|DOT_PRODUCT:DOT_PRODUCT_BLOCK[0].DOT_PRODUCT_inst|state
+Name state.S_WAIT_SUM1 state.S_WAIT_SUM0 state.S_WAIT_MUL state.S_IDLE 
+state.S_IDLE 0 0 0 0 
+state.S_WAIT_MUL 0 0 1 1 
+state.S_WAIT_SUM0 0 1 0 1 
+state.S_WAIT_SUM1 1 0 0 1 

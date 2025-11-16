@@ -1,0 +1,266 @@
+`define IDLE  4'd0
+`define ST0   4'd1
+`define ST1   4'd2
+`define ST2   4'd3
+`define ST3   4'd4
+`define ST4   4'd5
+`define ST5   4'd6
+`define ST6   4'd7
+`define ST7   4'd8
+`define DONE  4'd9
+
+module SQRT(clk, areset, start, a, result, finish);
+    input logic clk, areset, start;
+    input logic [31:0] a;     
+    output logic [31:0] result;
+    output logic finish;
+
+    localparam logic [31:0] x0_const = 32'h3f5a827a;
+    localparam logic [31:0] sqrt_1by05  = 32'h3fb504f3;
+    localparam logic [31:0] sqrt_2_const = 32'h40000000;
+    // localparam logic [31:0] sqrt_1by2_const= 32'h3f3504f3;
+
+    // Pipeline registers for intermediates (captured from module outputs)
+    logic [31:0] temp1_reg; // D1 -> q
+    logic [31:0] temp2_reg; // A1 -> q
+    logic [31:0] temp3_reg; // D2 -> q
+    logic [31:0] temp4_reg; // A2 -> q
+    logic [31:0] temp5_reg; // D3
+    logic [31:0] temp6_reg; // A3
+    logic [31:0] temp7_reg; // M1
+    logic [31:0] temp8_reg; // M2 (final alternative)
+
+    // Inputs to modules 
+    logic [31:0] div_a_in, div_b_in;
+    logic [31:0] sum_a_in, sum_b_in;
+    logic [31:0] mult_a_in, mult_b_in;
+
+    logic [31:0] div_q, sum_q, mult_q; 
+
+    // minimal start/valid handshake signals for operator modules
+    logic div_start, sum_start, mult_start;
+    logic div_valid, sum_valid, mult_valid;
+
+    DIV div_inst (.clk(clk), .areset(areset), .a(div_a_in), .b(div_b_in), .start(div_start), .q(div_q), .finish(div_valid));
+    SUM sum_inst (.clk(clk), .areset(areset), .a(sum_a_in), .b(sum_b_in), .start(sum_start), .q(sum_q), .finish(sum_valid));
+    MULT mult_inst (.clk(clk), .areset(areset), .a(mult_a_in), .b(mult_b_in), .start(mult_start), .q(mult_q), .finish(mult_valid));
+
+    logic [3:0] state_reg, state_next;
+
+    // Registers to hold input breakdown
+    logic [7:0]  exponent_in;
+    logic [22:0] mantissa_in;
+    logic sign_in;
+
+    logic [31:0] x0_reg, x1_reg, x2_reg, x3_reg;
+
+    logic [31:0] assembled_temp_reg;
+    logic [8:0] exp_signed_comb;
+    logic [8:0] exp_half_comb;
+    logic [7:0] Exp_2_comb;
+    logic remainder_comb;
+    logic pos_comb;
+
+    // exp sum for assembling final exponent
+    logic [7:0] exp_sum_comb;
+    // stored remainder (captured at ST6)
+    logic remainder_reg;
+
+    // Latch input on start
+    always_ff @(posedge clk or posedge areset) begin
+        if (areset) begin
+            state_reg <= `IDLE;
+
+            temp1_reg <= 32'd0; temp2_reg <= 32'd0; temp3_reg <= 32'd0; temp4_reg <= 32'd0;
+            temp5_reg <= 32'd0; temp6_reg <= 32'd0; temp7_reg <= 32'd0; temp8_reg <= 32'd0;
+
+            x0_reg <= x0_const; x1_reg <= 32'd0; x2_reg <= 32'd0; x3_reg <= 32'd0;
+
+            exponent_in <= 8'd0; mantissa_in <= 23'd0; sign_in <= 1'b0;
+
+            assembled_temp_reg <= 32'd0;
+
+            result <= 32'd0; finish <= 1'b0;
+        end else begin
+            state_reg <= state_next;
+
+            // capture outputs from operators when they assert valid
+            if (div_valid) begin
+                if (state_reg == `ST0) begin 
+                    temp1_reg <= div_q; // D1 finished
+                end else if (state_reg == `ST2) begin 
+                    temp3_reg <= div_q; // D2 finished
+                end else if (state_reg == `ST4) begin 
+                    temp5_reg <= div_q; // D3 finished
+                end
+            end
+
+            if (sum_valid) begin
+                if (state_reg == `ST1) begin 
+                    temp2_reg <= sum_q; // A1 finished
+                end else if (state_reg == `ST3) begin 
+                    temp4_reg <= sum_q; // A2 finished
+                end else if (state_reg == `ST5) begin 
+                    temp6_reg <= sum_q; // A3 finished
+                end 
+            end
+
+            if (mult_valid) begin
+                if (state_reg == `ST6) begin 
+                    temp7_reg <= mult_q; // M1 finished
+                end else if (state_reg == `ST7) begin 
+                    temp8_reg <= mult_q; // M2 finished
+                end
+            end
+
+            if (state_reg == `IDLE && start) begin
+                sign_in <= a[31];
+                exponent_in <= a[30:23];
+                mantissa_in <= a[22:0];
+                x0_reg <= x0_const;
+            end
+
+            if (state_reg == `ST1) begin
+                x1_reg <= {temp2_reg[31], temp2_reg[30:23]-1, temp2_reg[22:0]};
+            end
+
+            if (state_reg == `ST3) begin
+                x2_reg <= {temp4_reg[31], temp4_reg[30:23]-1, temp4_reg[22:0]};
+            end
+
+            if (state_reg == `ST5) begin
+                x3_reg <= {temp6_reg[31], temp6_reg[30:23]-1, temp6_reg[22:0]};
+            end
+
+            if (state_reg == `ST6) begin
+                exp_sum_comb = Exp_2_comb + temp7_reg[30:23];
+                assembled_temp_reg <= {temp7_reg[31], exp_sum_comb, temp7_reg[22:0]};
+                remainder_reg <= remainder_comb;
+            end
+
+            // final result capture
+            if (state_reg == `DONE) begin
+                // choose final result based on remainder captured at ST6
+                if (remainder_reg) begin 
+                    result <= temp8_reg;
+                end else begin
+                    result <= assembled_temp_reg;
+                end 
+
+                finish <= 1'b1;
+            end else begin
+                finish <= 1'b0;
+            end
+        end
+    end
+
+    // compute Exp_2 and remainder
+    always_comb begin
+
+        // signed unbiased exponent = exponent_in - 127
+        exp_signed_comb = {1'b0, exponent_in} - 9'd127;
+
+        // pos if exponent >= 127
+        pos_comb = (exponent_in >= 8'd127);
+
+        // half (floor division by 2) using arithmetic shift
+        exp_half_comb = exp_signed_comb >>> 1;
+        Exp_2_comb = exp_half_comb[7:0];
+
+        remainder_comb = exp_signed_comb[0];
+    end
+
+    // Next-state logic 
+    always_comb begin
+        // default next state: hold
+        state_next = state_reg;
+
+        div_a_in = 32'd0; div_b_in = 32'd0;
+        sum_a_in = 32'd0; sum_b_in = 32'd0;
+        mult_a_in = 32'd0; mult_b_in = 32'd0;
+
+        div_start = 1'b0; sum_start = 1'b0; mult_start = 1'b0;
+
+        case (state_reg)
+            `IDLE: begin
+                if (start) begin
+                     state_next = ST0;
+                end else begin 
+                    state_next = IDLE;
+                end 
+            end
+
+            // Stage 0: start D1: A = {0,126,Mantissa}, B = x0
+            `ST0: begin
+                div_a_in = {1'b0, 8'd126, mantissa_in};
+                div_b_in = x0_reg;
+
+                // assert start for DIV
+                div_start = 1'b1;
+
+                // once fed, move to next state; actual capture happens when div_valid asserted
+                state_next = div_valid ? `ST1 : `ST0;
+            end
+
+            // Stage1: feed SUM with temp1 and x0
+            `ST1: begin
+                // sum inputs are the previous div output (temp1_reg) and x0
+                sum_a_in = temp1_reg;
+                sum_b_in = x0_reg;
+                sum_start = 1'b1;
+                state_next = sum_valid ? `ST2 : `ST1;
+            end
+
+            // Stage2: start D2 with A = {0,126,Mantissa}, B = x1 (computed previous cycle)
+            `ST2: begin
+                div_a_in = {1'b0, 8'd126, mantissa_in};
+                div_b_in = x1_reg;
+                div_start = 1'b1;
+                state_next = div_valid ? `ST3 : `ST2;
+            end
+
+            `ST3: begin
+                sum_a_in = temp3_reg;
+                sum_b_in = x1_reg;
+                sum_start = 1'b1;
+                state_next = sum_valid ? `ST4 : `ST3;
+            end
+
+            `ST4: begin
+                div_a_in = {1'b0, 8'd126, mantissa_in};
+                div_b_in = x2_reg;
+                div_start = 1'b1;
+                state_next = div_valid ? `ST5 : `ST4;
+            end
+
+            `ST5: begin
+                sum_a_in = temp5_reg;
+                sum_b_in = x2_reg;
+                sum_start = 1'b1;
+                state_next = sum_valid ? `ST6 : `ST5;
+            end
+
+            `ST6: begin
+                // multiply x3 * sqrt_1by05
+                mult_a_in = x3_reg;
+                mult_b_in = sqrt_1by05;
+                mult_start = 1'b1;
+                state_next = mult_valid ? `ST7 : `ST6;
+            end
+
+            `ST7: begin
+                mult_a_in = assembled_temp_reg;
+                mult_b_in = sqrt_2_const;
+                mult_start = 1'b1; 
+                state_next = mult_valid ? `DONE : `ST7;
+            end
+
+            `DONE: begin
+                state_next = `IDLE;
+            end
+
+            default: state_next = `IDLE;
+        endcase
+    end
+
+endmodule
