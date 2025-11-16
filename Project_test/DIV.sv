@@ -1,30 +1,27 @@
-module DIV (
-    input  logic        clk,
-    input  logic        areset,
-    input  logic        start,         // pulse 1 cycle to start a/b
-    input  logic [31:0] a,
-    input  logic [31:0] b,
-    output logic [31:0] q,
-    output logic        finish         // pulses 1 cycle when q valid
-);
-    // -----------------------------
-    // Useful IEEE-754 single consts
-    // -----------------------------
+module DIV (clk, areset, start, a, b, q, finish);
+    input logic clk;
+    input logic areset;
+    input logic start;
+    input logic [31:0] a; // dividend
+    input logic [31:0] b; // divisor
+    output logic [31:0] q; // quotient
+    output logic finish;
+
+    // IEE constants used in algorithm
     localparam logic [31:0] TWO   = 32'h40000000; // 2.0
-    // Linear minimax approx for 1/x on [0.5,1): y ≈ A - B*x
     localparam logic [31:0] A_CST = 32'h4034B4B5; // A ≈ 48/17 ≈ 2.8235295
     localparam logic [31:0] B_CST = 32'h3FF0F0F1; // B ≈ 32/17 ≈ 1.8823529
 
-    // -----------------------------
-    // State machine
-    // -----------------------------
+
     typedef enum logic [3:0] {
         S_IDLE          = 4'd0,
+
         // y0 = A - B*x
         S_Y0_MUL_START  = 4'd1, // t1 = B*x
         S_Y0_MUL_WAIT   = 4'd2,
         S_Y0_SUB_START  = 4'd3, // y0 = A - t1
         S_Y0_SUB_WAIT   = 4'd4,
+
         // y1 = y0*(2 - x*y0)
         S_NR_MUL1_START = 4'd5, // t2 = x*y0
         S_NR_MUL1_WAIT  = 4'd6,
@@ -32,6 +29,7 @@ module DIV (
         S_NR_SUB_WAIT   = 4'd8,
         S_NR_MUL2_START = 4'd9, // y1 = y0*t3
         S_NR_MUL2_WAIT  = 4'd10,
+
         // scale to 1/b and multiply by a
         S_SCALE_MUL_START = 4'd11, // rpos = y1 * SCALE( exp_b )
         S_SCALE_MUL_WAIT  = 4'd12,
@@ -41,58 +39,47 @@ module DIV (
 
     state_t state, state_next;
 
-    // -----------------------------
-    // Unpacked fields & specials
-    // -----------------------------
+
     logic sign_a, sign_b;
     logic [7:0] exp_a, exp_b;
     logic [22:0] frac_a, frac_b;
     logic a_is_zero, b_is_zero, b_is_inf;
-
-    // Latched inputs when we start (to keep them stable)
     logic [31:0] a_reg, b_reg;
-
-    // x = normalized mantissa(b)/2 (range ~[0.5,1)), sign=0
     logic [31:0] x_bits;
 
     // scale factor for reciprocal exponent: SCALE = 2^(126 - exp_b)
     logic [31:0] scale_bits; // sign=0, mant=0, exp = 253 - exp_b
 
-    // -----------------------------
-    // Intermediates
-    // -----------------------------
-    logic [31:0] t1;     // B*x
-    logic [31:0] y0;     // A - t1
-    logic [31:0] t2;     // x*y0
-    logic [31:0] t3;     // 2 - t2
-    logic [31:0] y1;     // y0*t3 (refined reciprocal of x)
+    logic [31:0] t1; // B*x
+    logic [31:0] y0; // A - t1
+    logic [31:0] t2; // x*y0
+    logic [31:0] t3; // 2 - t2
+    logic [31:0] y1; // y0*t3 (refined reciprocal of x)
     logic [31:0] recip_pos; // y1 * SCALE (positive reciprocal of |b|)
-    logic [31:0] recip_b;   // recip_pos with sign of b
+    logic [31:0] recip_b; // recip_pos with sign of b
 
     // Outputs from shared MULT/SUB cores
     logic [31:0] mult_q;
-    logic        mult_done;
+    logic mult_done;
 
     logic [31:0] sub_q;
-    logic        sub_done;
+    logic sub_done;
 
     // Control to shared cores
-    logic        mult_start;
+    logic mult_start;
     logic [31:0] mult_a, mult_b;
 
-    logic        sub_start;
+    logic sub_start;
     logic [31:0] sub_a, sub_b;
 
     // Result regs
     logic [31:0] q_reg;
-    logic        finish_reg;
+    logic finish_reg;
 
-    assign q      = q_reg;
+    assign q = q_reg;
     assign finish = finish_reg;
 
-    // -----------------------------
-    // Shared MULT core (your module)
-    // -----------------------------
+    // ONE SHARED MULT core
     MULT u_mult (
         .clk    (clk),
         .areset (areset),
@@ -103,9 +90,8 @@ module DIV (
         .finish (mult_done)
     );
 
-    // -----------------------------
-    // Shared SUB core (uses SUM)
-    // -----------------------------
+
+    // ONE SHARED SUB core
     SUB u_sub (
         .clk    (clk),
         .areset (areset),
@@ -116,9 +102,8 @@ module DIV (
         .finish (sub_done)
     );
 
-    // -----------------------------
-    // Combinational control routing
-    // -----------------------------
+ 
+
     always_comb begin
         // defaults
         mult_start = 1'b0;
@@ -134,8 +119,6 @@ module DIV (
         unique case (state)
             S_IDLE: begin
                 if (start) begin
-                    // If specials, we'll short-circuit in sequential block.
-                    // Otherwise: kick first multiply t1 = B*x
                     state_next = S_Y0_MUL_START;
                 end
             end
@@ -143,19 +126,22 @@ module DIV (
             // y0 = A - B*x
             S_Y0_MUL_START: begin
                 mult_start = 1'b1;
-                mult_a     = B_CST;
-                mult_b     = x_bits;
+                mult_a = B_CST;
+                mult_b = x_bits;
                 state_next = S_Y0_MUL_WAIT;
             end
+
             S_Y0_MUL_WAIT: begin
                 if (mult_done) state_next = S_Y0_SUB_START;
             end
+
             S_Y0_SUB_START: begin
                 sub_start = 1'b1;
-                sub_a     = A_CST;
-                sub_b     = mult_q;   // t1
+                sub_a = A_CST;
+                sub_b = mult_q;   // t1
                 state_next = S_Y0_SUB_WAIT;
             end
+
             S_Y0_SUB_WAIT: begin
                 if (sub_done) state_next = S_NR_MUL1_START;
             end
@@ -163,50 +149,55 @@ module DIV (
             // y1 = y0 * (2 - x*y0)
             S_NR_MUL1_START: begin
                 mult_start = 1'b1;
-                mult_a     = x_bits;
-                mult_b     = y0;      // from sub_q latched
+                mult_a = x_bits;
+                mult_b = y0;      // from sub_q latched
                 state_next = S_NR_MUL1_WAIT;
             end
+
             S_NR_MUL1_WAIT: begin
                 if (mult_done) state_next = S_NR_SUB_START;
             end
+
             S_NR_SUB_START: begin
                 sub_start = 1'b1;
-                sub_a     = TWO;      // 2.0
-                sub_b     = t2;       // mult_q
+                sub_a = TWO;      // 2.0
+                sub_b = t2;       // mult_q
                 state_next = S_NR_SUB_WAIT;
             end
+
             S_NR_SUB_WAIT: begin
                 if (sub_done) state_next = S_NR_MUL2_START;
             end
+
             S_NR_MUL2_START: begin
                 mult_start = 1'b1;
-                mult_a     = y0;
-                mult_b     = t3;
+                mult_a = y0;
+                mult_b = t3;
                 state_next = S_NR_MUL2_WAIT;
             end
+
             S_NR_MUL2_WAIT: begin
                 if (mult_done) state_next = S_SCALE_MUL_START;
             end
 
-            // recip(|b|) = y1 * SCALE(exp_b)
             S_SCALE_MUL_START: begin
                 mult_start = 1'b1;
-                mult_a     = y1;
-                mult_b     = scale_bits;  // 2^(126 - exp_b)
+                mult_a = y1;
+                mult_b = scale_bits;  
                 state_next = S_SCALE_MUL_WAIT;
             end
+
             S_SCALE_MUL_WAIT: begin
                 if (mult_done) state_next = S_FINAL_MUL_START;
             end
 
-            // q = a * recip_b  (recip_b carries sign of b)
             S_FINAL_MUL_START: begin
                 mult_start = 1'b1;
-                mult_a     = a_reg;
-                mult_b     = recip_b;
+                mult_a = a_reg;
+                mult_b = recip_b;
                 state_next = S_FINAL_MUL_WAIT;
             end
+
             S_FINAL_MUL_WAIT: begin
                 if (mult_done) state_next = S_IDLE;
             end
@@ -215,69 +206,59 @@ module DIV (
         endcase
     end
 
-    // -----------------------------
-    // Sequential: latching & specials
-    // -----------------------------
-	                 logic [8:0] e_scaled;
+	logic [8:0] e_scaled;
 
     always_ff @(posedge clk or posedge areset) begin
         if (areset) begin
-            state      <= S_IDLE;
-            q_reg      <= 32'd0;
+            state <= S_IDLE;
+            q_reg <= 32'd0;
             finish_reg <= 1'b0;
-            a_reg      <= 32'd0;
-            b_reg      <= 32'd0;
-            y0         <= 32'd0;
-            t2         <= 32'd0;
-            t3         <= 32'd0;
-            y1         <= 32'd0;
-            recip_pos  <= 32'd0;
+            a_reg <= 32'd0;
+            b_reg <= 32'd0;
+            y0 <= 32'd0;
+            t2 <= 32'd0;
+            t3 <= 32'd0;
+            y1 <= 32'd0;
+            recip_pos <= 32'd0;
         end else begin
-            state      <= state_next;
+            state <= state_next;
             finish_reg <= 1'b0; // default low; pulse on final
 
-            // On start: latch inputs & precompute fields
             if (state == S_IDLE && start) begin
                 a_reg <= a;
                 b_reg <= b;
 
-                sign_a   <= a[31];
-                sign_b   <= b[31];
-                exp_a    <= a[30:23];
-                exp_b    <= b[30:23];
-                frac_a   <= a[22:0];
-                frac_b   <= b[22:0];
+                sign_a <= a[31];
+                sign_b <= b[31];
+                exp_a <= a[30:23];
+                exp_b <= b[30:23];
+                frac_a <= a[22:0];
+                frac_b <= b[22:0];
 
                 a_is_zero <= (a[30:23] == 8'd0) && (a[22:0] == 23'd0);
                 b_is_zero <= (b[30:23] == 8'd0) && (b[22:0] == 23'd0);
-                b_is_inf  <= (b[30:23] == 8'hFF) && (b[22:0] == 23'd0);
+                b_is_inf <= (b[30:23] == 8'hFF) && (b[22:0] == 23'd0);
 
-                // x = normalized mantissa of b divided by 2 (forces into [0.5,1))
-                // For normals: x_bits = {0, 126, frac_b}; For non-normals, use 0.5 as a safe placeholder.
-                if (b[30:23] != 8'd0 && b[30:23] != 8'hFF)
+        
+                if (b[30:23] != 8'd0 && b[30:23] != 8'hFF) begin
                     x_bits <= {1'b0, 8'd126, frac_b};
-                else
-                    x_bits <= 32'h3F000000; // 0.5 fallback (denorm/inf)
+                end else begin 
+                    x_bits <= 32'h3F000000; 
+                end
 
-                // SCALE = 2^(126 - exp_b). For b normals, exp_b ∈ [1..254] -> scale exponent ∈ [252..-?]
-                // As float: sign=0, frac=0, exp = 127 + (126 - exp_b) = 253 - exp_b
-                // Clamp into [1..254] for safety; denorm/zero just pick a large scale -> will overflow to inf (okay).
-                e_scaled = 9'(253) - 9'(b[30:23]); // could go <0 or >255
-                if (e_scaled <= 1)       scale_bits <= {1'b0, 8'd1, 23'd0};     // min normal ~2^(1-127)
-                else if (e_scaled >= 254)scale_bits <= {1'b0, 8'd254, 23'd0};   // cap to avoid NaN enc
+                if (e_scaled <= 1)       scale_bits <= {1'b0, 8'd1, 23'd0};   
+                else if (e_scaled >= 254)scale_bits <= {1'b0, 8'd254, 23'd0}; 
                 else                     scale_bits <= {1'b0, e_scaled[7:0], 23'd0};
             end
 
-            // Short-circuit specials right after start
             if (state == S_Y0_MUL_START) begin
-                // Handle special cases quickly
-                // a==0 => result 0
+
                 if (a_is_zero) begin
-                    q_reg      <= { (sign_a ^ sign_b), 8'd0, 23'd0 };
+                    q_reg <= { (sign_a ^ sign_b), 8'd0, 23'd0 };
                     finish_reg <= 1'b1;
-                    state      <= S_IDLE;
+                    state <= S_IDLE;
                 end
-                // b==0 => ±Inf
+                // b==0 => inf 
                 else if (b_is_zero) begin
                     q_reg      <= { (sign_a ^ sign_b), 8'hFF, 23'd0 };
                     finish_reg <= 1'b1;
@@ -285,9 +266,9 @@ module DIV (
                 end
                 // b==Inf => 0
                 else if (b_is_inf) begin
-                    q_reg      <= { (sign_a ^ sign_b), 8'd0, 23'd0 };
+                    q_reg <= { (sign_a ^ sign_b), 8'd0, 23'd0 };
                     finish_reg <= 1'b1;
-                    state      <= S_IDLE;
+                    state <= S_IDLE;
                 end
             end
 
@@ -311,16 +292,13 @@ module DIV (
                 recip_pos <= mult_q;    // positive reciprocal magnitude
             end
             if (state == S_FINAL_MUL_WAIT && mult_done) begin
-                q_reg      <= mult_q;   // final a * recip_b
+                q_reg <= mult_q;   
                 finish_reg <= 1'b1;
             end
         end
     end
 
-    // -----------------------------
-    // Compose signed reciprocal of b
-    // recip_b takes sign of b (recip of negative is negative)
-    // -----------------------------
+
     always_comb begin
         recip_b = { sign_b, recip_pos[30:0] };
     end

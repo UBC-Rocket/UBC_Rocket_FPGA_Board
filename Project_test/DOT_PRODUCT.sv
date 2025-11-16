@@ -2,9 +2,9 @@ module DOT_PRODUCT (clk, areset, start,
                     a0, a1, a2,
                     b0, b1, b2,
                     q, finish);
-    input  logic        clk;
-    input  logic        areset;     
-    input  logic        start;       // input valid for a*, b*
+    input  logic clk;
+    input  logic areset;     
+    input  logic start;      // input valid for a*, b*
     input  logic [31:0] a0;         // input vector element 0
     input  logic [31:0] a1;         // input vector element 1
     input  logic [31:0] a2;         // input vector element 2
@@ -12,7 +12,7 @@ module DOT_PRODUCT (clk, areset, start,
     input  logic [31:0] b1;         // input vector element 1
     input  logic [31:0] b2;         // input vector element 2
     output logic [31:0] q;          // output dot product
-    output logic        finish;     // output valid for q
+    output logic finish;     // output valid for q
     
     // =========================
     // State encoding
@@ -32,15 +32,15 @@ module DOT_PRODUCT (clk, areset, start,
 
     // MULT outputs
     logic [31:0] mult0_q, mult1_q, mult2_q;
-    logic        mult0_done, mult1_done, mult2_done;
+    logic mult0_done, mult1_done, mult2_done;
 
     // SUM0: mult0 + mult1
     logic [31:0] sum0_q;
-    logic        sum0_done;
+    logic sum0_done;
 
     // SUM1: sum0 + mult2
     logic [31:0] sum1_q;
-    logic        sum1_done;
+    logic sum1_done;
 
     // start signals for submodules (1-cycle pulses)
     logic start_mults;
@@ -51,7 +51,6 @@ module DOT_PRODUCT (clk, areset, start,
     // Submodule instantiations
     // =========================
 
-    // Three parallel multiplies, started together in S_IDLE
     MULT mult_inst0 (
         .clk    (clk),
         .areset (areset),
@@ -87,7 +86,7 @@ module DOT_PRODUCT (clk, areset, start,
         .clk    (clk),
         .areset (areset),
         .start  (start_sum0),
-        .a      (mult0_q_reg),   // use latched products
+        .a      (mult0_q_reg),   
         .b      (mult1_q_reg),
         .q      (sum0_q),
         .finish (sum0_done)
@@ -98,7 +97,7 @@ module DOT_PRODUCT (clk, areset, start,
         .clk    (clk),
         .areset (areset),
         .start  (start_sum1),
-        .a      (sum0_q_reg),    // use latched partial sum
+        .a      (sum0_q_reg),   
         .b      (mult2_q_reg),
         .q      (sum1_q),
         .finish (sum1_done)
@@ -128,15 +127,14 @@ module DOT_PRODUCT (clk, areset, start,
     assign start_mults = (state == S_IDLE) && start;
 
     // kick SUM0 when all three MULTs are done (single cycle)
-    assign start_sum0  = (state == S_WAIT_MUL)  &&
-                         mult0_done && mult1_done && mult2_done;
+    assign start_sum0  = (state == S_WAIT_MUL)  && mult0_done && mult1_done && mult2_done;
 
     // kick SUM1 when SUM0 is done (single cycle)
     assign start_sum1  = (state == S_WAIT_SUM0) && sum0_done;
 
     // finish pulse when SUM1 done
-    assign finish      = finish_reg;
-    assign q           = q_reg;
+    assign finish = finish_reg;
+    assign q = q_reg;
 
     // Next-state logic
     always_comb begin
@@ -170,15 +168,15 @@ module DOT_PRODUCT (clk, areset, start,
     // =========================
     always_ff @(posedge clk or posedge areset) begin
         if (areset) begin
-            state        <= S_IDLE;
-            mult0_q_reg  <= 32'd0;
-            mult1_q_reg  <= 32'd0;
-            mult2_q_reg  <= 32'd0;
-            sum0_q_reg   <= 32'd0;
-            q_reg        <= 32'd0;
-            finish_reg   <= 1'b0;
+            state <= S_IDLE;
+            mult0_q_reg <= 32'd0;
+            mult1_q_reg <= 32'd0;
+            mult2_q_reg <= 32'd0;
+            sum0_q_reg  <= 32'd0;
+            q_reg <= 32'd0;
+            finish_reg <= 1'b0;
         end else begin
-            state      <= state_next;
+            state <= state_next;
             finish_reg <= 1'b0;   // default: no finish
 
             // latch mult results once, when all done
@@ -196,7 +194,7 @@ module DOT_PRODUCT (clk, areset, start,
 
             // latch final result + raise finish
             if (state == S_WAIT_SUM1 && sum1_done) begin
-                q_reg      <= sum1_q;
+                q_reg <= sum1_q;
                 finish_reg <= 1'b1;   // 1-cycle valid pulse for this dot product
             end
         end

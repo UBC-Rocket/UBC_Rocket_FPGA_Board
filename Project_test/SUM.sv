@@ -7,22 +7,22 @@ module SUM (clk, areset, start, a, b, q, finish);
 
     // STAGE 0: Input register
     logic [31:0] a_s0, b_s0;
-    logic        a_zero_s0, b_zero_s0;
-    logic        valid_s0;
+    logic a_zero_s0, b_zero_s0;
+    logic valid_s0;
 
     always_ff @(posedge clk or posedge areset) begin
         if (areset) begin
-            a_s0      <= 32'd0;
-            b_s0      <= 32'd0;
+            a_s0 <= 32'd0;
+            b_s0 <= 32'd0;
             a_zero_s0 <= 1'b0;
             b_zero_s0 <= 1'b0;
             valid_s0  <= 1'b0;
         end else begin
-            a_s0      <= a;
-            b_s0      <= b;
+            a_s0 <= a;
+            b_s0 <= b;
             a_zero_s0 <= (a[30:23] == 8'd0 && a[22:0] == 23'd0);
             b_zero_s0 <= (b[30:23] == 8'd0 && b[22:0] == 23'd0);
-            valid_s0  <= start;
+            valid_s0 <= start;
         end
     end
 
@@ -33,22 +33,20 @@ module SUM (clk, areset, start, a, b, q, finish);
     logic [31:0] a_c1, b_c1;
     logic a_zero_c1, b_zero_c1;
 	 
-	     logic sign_a, sign_b;
-        logic [7:0]  exp_a, exp_b;
-        logic [23:0] mant_a, mant_b;
-        logic [7:0]  exp_small;
-        logic [24:0] mant_small_tmp;
-        logic        sign_small_tmp;
-        logic [7:0]  exp_diff;
+    logic sign_a, sign_b;
+    logic [7:0]  exp_a, exp_b;
+    logic [23:0] mant_a, mant_b;
+    logic [7:0]  exp_small;
+    logic [24:0] mant_small_tmp;
+    logic  sign_small_tmp;
+    logic [7:0]  exp_diff;
 
     always_comb begin
         // pass-through
-        a_c1      = a_s0;
-        b_c1      = b_s0;
+        a_c1 = a_s0;
+        b_c1 = b_s0;
         a_zero_c1 = a_zero_s0;
         b_zero_c1 = b_zero_s0;
-
-  
 
         sign_a = a_s0[31];
         sign_b = b_s0[31];
@@ -59,29 +57,30 @@ module SUM (clk, areset, start, a, b, q, finish);
         mant_b = (exp_b == 8'd0) ? {1'b0, b_s0[22:0]} : {1'b1, b_s0[22:0]};
 
         if ({exp_a, mant_a} >= {exp_b, mant_b}) begin
-            exp_big_c1      = exp_a;
-            mant_big_c1     = {1'b0, mant_a};
-            sign_big_c1     = sign_a;
+            exp_big_c1 = exp_a;
+            mant_big_c1 = {1'b0, mant_a};
+            sign_big_c1 = sign_a;
 
-            exp_small       = exp_b;
-            mant_small_tmp  = {1'b0, mant_b};
-            sign_small_tmp  = sign_b;
+            exp_small = exp_b;
+            mant_small_tmp = {1'b0, mant_b};
+            sign_small_tmp = sign_b;
         end else begin
-            exp_big_c1      = exp_b;
-            mant_big_c1     = {1'b0, mant_b};
-            sign_big_c1     = sign_b;
+            exp_big_c1 = exp_b;
+            mant_big_c1 = {1'b0, mant_b};
+            sign_big_c1 = sign_b;
 
-            exp_small       = exp_a;
-            mant_small_tmp  = {1'b0, mant_a};
-            sign_small_tmp  = sign_a;
+            exp_small = exp_a;
+            mant_small_tmp = {1'b0, mant_a};
+            sign_small_tmp = sign_a;
         end
 
         exp_diff = exp_big_c1 - exp_small;
 
-        if (exp_diff >= 8'd25)
+        if (exp_diff >= 8'd25) begin 
             mant_small_shift_c1 = 25'd0;
-        else
+        end else begin
             mant_small_shift_c1 = mant_small_tmp >> exp_diff;
+        end
 
         sign_small_c1 = sign_small_tmp;
     end
@@ -96,25 +95,25 @@ module SUM (clk, areset, start, a, b, q, finish);
 
     always_ff @(posedge clk or posedge areset) begin
         if (areset) begin
-            sign_big_s1        <= 1'b0;
-            sign_small_s1      <= 1'b0;
-            exp_big_s1         <= 8'd0;
-            mant_big_s1        <= 25'd0;
+            sign_big_s1 <= 1'b0;
+            sign_small_s1 <= 1'b0;
+            exp_big_s1 <= 8'd0;
+            mant_big_s1 <= 25'd0;
             mant_small_shift_s1<= 25'd0;
-            a_s1               <= 32'd0;
-            b_s1               <= 32'd0;
-            a_zero_s1          <= 1'b0;
-            b_zero_s1          <= 1'b0;
-            valid_s1           <= 1'b0;
+            a_s1 <= 32'd0;
+            b_s1 <= 32'd0;
+            a_zero_s1 <= 1'b0;
+            b_zero_s1 <= 1'b0;
+            valid_s1  <= 1'b0;
         end else begin
-            sign_big_s1         <= sign_big_c1;
-            sign_small_s1       <= sign_small_c1;
-            exp_big_s1          <= exp_big_c1;
-            mant_big_s1         <= mant_big_c1;
+            sign_big_s1 <= sign_big_c1;
+            sign_small_s1 <= sign_small_c1;
+            exp_big_s1 <= exp_big_c1;
+            mant_big_s1 <= mant_big_c1;
             mant_small_shift_s1 <= mant_small_shift_c1;
 
-            a_s1      <= a_c1;
-            b_s1      <= b_c1;
+            a_s1 <= a_c1;
+            b_s1 <= b_c1;
             a_zero_s1 <= a_zero_c1;
             b_zero_s1 <= b_zero_c1;
 
@@ -125,9 +124,9 @@ module SUM (clk, areset, start, a, b, q, finish);
     // stage 2: Mantissa add/sub + carry normalize
     logic [25:0] mant_sum_c2;
     logic [24:0] mant_res_c2;
-    logic [7:0]  exp_res_c2;
-    logic        sign_res_c2;
-    logic        norm_from_carry_c2;
+    logic [7:0] exp_res_c2;
+    logic sign_res_c2;
+    logic norm_from_carry_c2;
 
     always_comb begin
         // mantissa add/sub
@@ -143,11 +142,11 @@ module SUM (clk, areset, start, a, b, q, finish);
 
         // handle carry-out (right normalization)
         if (mant_sum_c2[25]) begin
-            mant_res_c2        = mant_sum_c2[25:1];
-            exp_res_c2         = exp_big_s1 + 8'd1;
+            mant_res_c2 = mant_sum_c2[25:1];
+            exp_res_c2 = exp_big_s1 + 8'd1;
             norm_from_carry_c2 = 1'b1;
         end else begin
-            mant_res_c2        = mant_sum_c2[24:0];
+            mant_res_c2 = mant_sum_c2[24:0];
             norm_from_carry_c2 = 1'b0;
         end
     end
@@ -155,31 +154,31 @@ module SUM (clk, areset, start, a, b, q, finish);
     // regs
     logic [24:0] mant_res_s2;
     logic [7:0]  exp_res_s2;
-    logic        sign_res_s2;
-    logic        norm_from_carry_s2;
+    logic sign_res_s2;
+    logic norm_from_carry_s2;
     logic [31:0] a_s2, b_s2;
-    logic        a_zero_s2, b_zero_s2;
-    logic        valid_s2;
+    logic a_zero_s2, b_zero_s2;
+    logic valid_s2;
 
     always_ff @(posedge clk or posedge areset) begin
         if (areset) begin
-            mant_res_s2        <= 25'd0;
-            exp_res_s2         <= 8'd0;
-            sign_res_s2        <= 1'b0;
+            mant_res_s2 <= 25'd0;
+            exp_res_s2 <= 8'd0;
+            sign_res_s2 <= 1'b0;
             norm_from_carry_s2 <= 1'b0;
-            a_s2               <= 32'd0;
-            b_s2               <= 32'd0;
-            a_zero_s2          <= 1'b0;
-            b_zero_s2          <= 1'b0;
-            valid_s2           <= 1'b0;
+            a_s2 <= 32'd0;
+            b_s2 <= 32'd0;
+            a_zero_s2 <= 1'b0;
+            b_zero_s2 <= 1'b0;
+            valid_s2 <= 1'b0;
         end else begin
-            mant_res_s2        <= mant_res_c2;
-            exp_res_s2         <= exp_res_c2;
-            sign_res_s2        <= sign_res_c2;
+            mant_res_s2 <= mant_res_c2;
+            exp_res_s2 <= exp_res_c2;
+            sign_res_s2 <= sign_res_c2;
             norm_from_carry_s2 <= norm_from_carry_c2;
 
-            a_s2      <= a_s1;
-            b_s2      <= b_s1;
+            a_s2 <= a_s1;
+            b_s2 <= b_s1;
             a_zero_s2 <= a_zero_s1;
             b_zero_s2 <= b_zero_s1;
 
@@ -189,6 +188,10 @@ module SUM (clk, areset, start, a, b, q, finish);
 
     // Stage 3: Leading-zero norm (if needed) + pack + SP   
     logic [31:0] q_c3;
+    logic [24:0] mant_norm;
+    logic [7:0]  exp_norm;
+    logic [5:0]  lz;
+    logic [7:0]  shift_amt;
 
     always_comb begin
         q_c3 = 32'd0;
@@ -210,18 +213,13 @@ module SUM (clk, areset, start, a, b, q, finish);
             q_c3 = 32'd0;
 
         end else begin
-            // further normalization only if we DIDN'T already normalize via carry
-            logic [24:0] mant_norm;
-            logic [7:0]  exp_norm;
-            logic [5:0]  lz;
-            logic [7:0]  shift_amt;
-
+            // further normalization only if we DIDN'T already normalize via carr
             mant_norm = mant_res_s2;
             exp_norm  = exp_res_s2;
 
             if (!norm_from_carry_s2 && mant_norm != 0) begin
-                // your original leading-zero chain
-                if      (mant_norm[24]) lz = 0;
+                // MANUAL LEADING-ZERO COUNTING
+                if (mant_norm[24]) lz = 0;
                 else if (mant_norm[23]) lz = 1;
                 else if (mant_norm[22]) lz = 2;
                 else if (mant_norm[21]) lz = 3;
@@ -248,10 +246,11 @@ module SUM (clk, areset, start, a, b, q, finish);
                 else if (mant_norm[0])  lz = 24;
                 else                    lz = 25;
 
-                if (exp_norm > lz)
+                if (exp_norm > lz) begin 
                     shift_amt = lz;
-                else
+                end else begin 
                     shift_amt = exp_norm;
+                end
 
                 if (shift_amt >= 25) begin
                     mant_norm = 25'd0;
@@ -277,19 +276,19 @@ module SUM (clk, areset, start, a, b, q, finish);
 
     // regs
     logic [31:0] q_s3;
-    logic        valid_s3;
+    logic valid_s3;
 
     always_ff @(posedge clk or posedge areset) begin
         if (areset) begin
-            q_s3     <= 32'd0;
+            q_s3 <= 32'd0;
             valid_s3 <= 1'b0;
         end else begin
-            q_s3     <= q_c3;
+            q_s3 <= q_c3;
             valid_s3 <= valid_s2;
         end
     end
 
-    assign q  = q_s3;
+    assign q = q_s3;
     assign finish = valid_s3; // '1' exactly when q is valid
 
 endmodule
