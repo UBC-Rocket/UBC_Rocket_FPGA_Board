@@ -1,0 +1,64 @@
+Removed Pin From Net: NetName=CC1 Pin=R?-1
+Remove Pin from Net: Failed to remove Pin
+Removed Pin From Net: NetName=GND Pin=R?-2
+Remove Pin from Net: Failed to remove Pin
+Removed Member From Class: ClassName=MCU Member=R?
+Change Footprint: Footprint Not Found FTSH-107-XX-YYY-DV-K-P-TR
+Change Component Designator: OldDesignator=CJ_? NewDesignator=CJ_1
+Change Component Designator: OldDesignator=CJ_? NewDesignator=CJ_2
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Added Component: Designator=R58(RESC1608X55X25ML10T15)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-075K1L"; VariantName = "[No Variations]"
+Added Component: Designator=R59(RESC1608X55X25ML10T15)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0603FR-075K1L"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin J3-3
+Add Pin To Net: Unknown Pin: Pin J3-4
+Add Pin To Net: Unknown Pin: Pin J3-5
+Add Pin To Net: Unknown Pin: Pin J3-6
+Add Pin To Net: Unknown Pin: Pin J3-7
+Add Pin To Net: Unknown Pin: Pin J3-8
+Added Pin To Net: NetName=CC1 Pin=R58-1
+Added Pin To Net: NetName=GND Pin=R58-2
+Added Pin To Net: NetName=CC2 Pin=R59-1
+Added Pin To Net: NetName=GND Pin=R59-2
+Added Pin To Net: NetName=GND Pin=U9-6
+Added Pin To Net: NetName=GND Pin=U9-8
+Added Pin To Net: NetName=3v3 Pin=U9-9
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Net: Net with name "GND" already exists
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=MCU Member=Component CJ_2 100nF
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=MCU Member=Component R58 RC0603FR-075K1L
+Added Member To Class: ClassName=MCU Member=Component R59 RC0603FR-075K1L
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL

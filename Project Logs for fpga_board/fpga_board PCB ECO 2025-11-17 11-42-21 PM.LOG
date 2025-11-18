@@ -1,0 +1,59 @@
+Change Footprint: Footprint Not Found FTSH-107-XX-YYY-DV-K-P-TR
+Change Component Designator: OldDesignator=C? NewDesignator=C11
+Change Component Designator: OldDesignator=C? NewDesignator=C12
+Change Component Designator: OldDesignator=C? NewDesignator=C13
+Change Component Designator: OldDesignator=C? NewDesignator=C14
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Add component: Footprint Not Found SW_TL3365AF180QG
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=3v3 Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=3v3 Pin=C12-2
+Added Pin To Net: NetName=3v3 Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=3v3 Pin=C14-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin J3-3
+Add Pin To Net: Unknown Pin: Pin J3-4
+Add Pin To Net: Unknown Pin: Pin J3-5
+Add Pin To Net: Unknown Pin: Pin J3-6
+Add Pin To Net: Unknown Pin: Pin J3-7
+Add Pin To Net: Unknown Pin: Pin J3-8
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Net: Net with name "GND" already exists
+Added Member To Class: ClassName=FPGA3 Member=Component C11 C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C12 C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C13 GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C14 C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

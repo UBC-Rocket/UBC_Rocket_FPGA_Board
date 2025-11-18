@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="fir_filt_sim/dspba_library_package.vhd" type="VHDL" />
+ <file path="fir_filt_sim/dspba_library.vhd" type="VHDL" />
+ <file path="fir_filt_sim/auk_dspip_math_pkg_hpfir.vhd" type="VHDL" />
+ <file path="fir_filt_sim/auk_dspip_lib_pkg_hpfir.vhd" type="VHDL" />
+ <file
+   path="fir_filt_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="fir_filt_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="fir_filt_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"
+   type="VHDL" />
+ <file path="fir_filt_sim/auk_dspip_roundsat_hpfir.vhd" type="VHDL" />
+ <file path="fir_filt_sim/altera_avalon_sc_fifo.v" type="VERILOG" />
+ <file path="fir_filt_sim/fir_filt_rtl_core.vhd" type="VHDL" />
+ <file path="fir_filt_sim/fir_filt_ast.vhd" type="VHDL" />
+ <file path="fir_filt_sim/fir_filt.vhd" type="VHDL" />
+ <file path="fir_filt_sim/fir_filt_nativelink.tcl" type="OTHER" />
+ <file path="fir_filt_sim/fir_filt_msim.tcl" type="OTHER" />
+ <file path="fir_filt_sim/fir_filt_tb.vhd" type="VHDL" />
+ <file path="fir_filt_sim/fir_filt_mlab.m" type="OTHER" />
+ <file path="fir_filt_sim/fir_filt_model.m" type="OTHER" />
+ <file path="fir_filt_sim/fir_filt_coef_int.txt" type="OTHER" />
+ <file path="fir_filt_sim/fir_filt_input.txt" type="OTHER" />
+ <file path="fir_filt_sim/fir_filt_param.txt" type="OTHER" />
+ <topLevel name="fir_filt" />
+ <deviceFamily name="cycloneive" />
+</simPackage>

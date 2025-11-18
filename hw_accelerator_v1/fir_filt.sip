@@ -1,0 +1,25 @@
+set_global_assignment -entity "fir_filt" -library "lib_fir_filt" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "fir_filt" -library "lib_fir_filt" -name IP_TOOL_VERSION "19.1"
+set_global_assignment -entity "fir_filt" -library "lib_fir_filt" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "lib_fir_filt" -name SPD_FILE [file join $::quartus(sip_path) "fir_filt.spd"]
+
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/dspba_library_package.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/dspba_library.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_rtl_core.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_ast.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_nativelink.tcl"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_msim.tcl"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_tb.vhd"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_mlab.m"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_model.m"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_coef_int.txt"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_input.txt"]
+set_global_assignment -library "lib_fir_filt" -name MISC_FILE [file join $::quartus(sip_path) "fir_filt_sim/fir_filt_param.txt"]

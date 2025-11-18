@@ -1,4 +1,5 @@
 Flash SPI=FLASH_CLK,FLASH_DO,FLASH MEM CS,FLASH DI
 SDRAM=Data Bit 0,Data Bit 1,Data Bit 2,Data Bit 3,Data Bit 4,Data Bit 5,Data Bit 6,Data Bit 7,Data Bit 8,Data Bit 9,Data Bit 10,Data Bit 11,Data Bit 12,Data Bit 13,Data Bit 14,Data Bit 15
-SDRAM CMD=Bank Select 0,Bank Select 1,CLK Enable,SDRAM Select,Row Addr Strobe,Column Addr Strobe,Write Enable,Lower Byte Mask,Higher Byte Mask,CLK Input
+SDRAM CLK=CLK Enable,CLK Input,SDRAM Select
+SDRAM CMD=Bank Select 0,Bank Select 1,Row Addr Strobe,Column Addr Strobe,Write Enable,Lower Byte Mask,Higher Byte Mask
 SDRAM_ADDR=ADDR 0,ADDR 1,ADDR 2,ADDR 3,ADDR 4,ADDR 5,ADDR 6,ADDR 7,ADDR 8,ADDR 9,ADDR 10,ADDR 11,ADDR 12

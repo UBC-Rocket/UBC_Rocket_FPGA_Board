@@ -1,0 +1,295 @@
+Change Footprint: Footprint Not Found FTSH-107-XX-YYY-DV-K-P-TR
+Added Component: Designator=D10(FP-LTST-C170GKT-MFG)
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dominant Wavelength"; Value = "569nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "30mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "2.1V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Illumination Color"; Value = "Green"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Color"; Value = "Colorless"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Style"; Value = "Diffused"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lens Transparency"; Value = "Clear"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Luminous Intensity"; Value = "6mcd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Elements"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of LEDs"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reverse Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Current"; Value = "10mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Viewing Angle"; Value = "130°"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Wavelength"; Value = "565nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Added Component: Designator=R60(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R61(FP-AC0603-IPC_A)
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.45mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Ratings"; Value = "AEC-Q200"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "47kR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "AC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "100ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "0.8mm"; VariantName = "[No Variations]"
+Added Component: Designator=R62(FP-TFCR0402-IPC_B)
+Added Component: Designator=R63(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R64(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R65(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R66(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R67(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R68(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Added Component: Designator=R69(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Add component: Footprint Not Found SW_TL3365AF180QG
+Added Pin To Net: NetName=GND Pin=D10-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin J3-3
+Add Pin To Net: Unknown Pin: Pin J3-4
+Add Pin To Net: Unknown Pin: Pin J3-5
+Add Pin To Net: Unknown Pin: Pin J3-6
+Add Pin To Net: Unknown Pin: Pin J3-7
+Add Pin To Net: Unknown Pin: Pin J3-8
+Added Pin To Net: NetName=CLK Input Pin=R60-1
+Added Pin To Net: NetName=VCC Pin=R61-1
+Added Pin To Net: NetName=NRST Pin=R61-2
+Added Pin To Net: NetName=GND Pin=R62-1
+Added Pin To Net: NetName=Bank Select 0 Pin=R63-2
+Added Pin To Net: NetName=Bank Select 1 Pin=R64-2
+Added Pin To Net: NetName=Row Address Strobe Pin=R65-2
+Added Pin To Net: NetName=Column Address Strobe Pin=R66-2
+Added Pin To Net: NetName=Lower Byte Mask Pin=R67-2
+Added Pin To Net: NetName=Higher Byte Mask Pin=R68-2
+Added Pin To Net: NetName=Write Enable Pin=R69-2
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Added Pin To Net: NetName=NRST Pin=U6-5
+Added Pin To Net: NetName=SDRAM Select Pin=U7-86
+Added Pin To Net: NetName=CLK_Enable Pin=U7-87
+Added Pin To Net: NetName=Bank Select 0 Term Pin=R63-1
+Added Pin To Net: NetName=Bank Select 0 Term Pin=U7-111
+Added Net: Name=Bank Select 0 Term
+Added Pin To Net: NetName=Bank Select 1 Term Pin=R64-1
+Added Pin To Net: NetName=Bank Select 1 Term Pin=U7-110
+Added Net: Name=Bank Select 1 Term
+Added Pin To Net: NetName=CLK Input Term Pin=R60-2
+Added Pin To Net: NetName=CLK Input Term Pin=U7-30
+Added Net: Name=CLK Input Term
+Added Pin To Net: NetName=Column Address Strobe Term Pin=R66-1
+Added Pin To Net: NetName=Column Address Strobe Term Pin=U7-115
+Added Net: Name=Column Address Strobe Term
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Net: Net with name "GND" already exists
+Added Pin To Net: NetName=Higher Byte Mask Term Pin=R68-1
+Added Pin To Net: NetName=Higher Byte Mask Term Pin=U7-120
+Added Net: Name=Higher Byte Mask Term
+Added Pin To Net: NetName=Lower Byte Mask Term Pin=R67-1
+Added Pin To Net: NetName=Lower Byte Mask Term Pin=U7-119
+Added Net: Name=Lower Byte Mask Term
+Added Pin To Net: NetName=NetD10_2 Pin=D10-2
+Added Pin To Net: NetName=NetD10_2 Pin=R62-2
+Added Net: Name=NetD10_2
+Added Pin To Net: NetName=Row Address Strobe Term Pin=R65-1
+Added Pin To Net: NetName=Row Address Strobe Term Pin=U7-114
+Added Net: Name=Row Address Strobe Term
+Added Pin To Net: NetName=Write Enable Term Pin=R69-1
+Added Pin To Net: NetName=Write Enable Term Pin=U7-121
+Added Net: Name=Write Enable Term
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=MCU Member=Component CJ_1 100nF
+Added Member To Class: ClassName=MCU Member=Component D10 LTST-C170GKT
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=FPGA2 Member=Component R60 RT0402BRE0750RL
+Added Member To Class: ClassName=MCU Member=Component R61 AC0603JR-0747KL
+Added Member To Class: ClassName=MCU Member=Component R62 TFCR0402-16W-C-1002BT
+Added Member To Class: ClassName=FPGA3 Member=Component R63 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R64 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R65 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R66 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R67 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R68 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R69 RT0402BRE0750RL
+Added Member To Class: ClassName=Memory Member=Component R? RT0402BRE0750RL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

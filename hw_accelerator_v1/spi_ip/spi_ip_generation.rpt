@@ -1,0 +1,28 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Public\Documents\Altium\fpga_board\hw_accelerator_v1\spi_ip.qsys --block-symbol-file --output-directory=C:\Users\Public\Documents\Altium\fpga_board\hw_accelerator_v1\spi_ip --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading hw_accelerator_v1/spi_ip.qsys
+Progress: Reading input file
+Progress: Adding spislave_0 [spislave 19.1]
+Progress: Parameterizing module spislave_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Public\Documents\Altium\fpga_board\hw_accelerator_v1\spi_ip.qsys --synthesis=VERILOG --output-directory=C:\Users\Public\Documents\Altium\fpga_board\hw_accelerator_v1\spi_ip\synthesis --family="Cyclone IV E" --part=EP4CE6E22C8
+Progress: Loading hw_accelerator_v1/spi_ip.qsys
+Progress: Reading input file
+Progress: Adding spislave_0 [spislave 19.1]
+Progress: Parameterizing module spislave_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: spi_ip: Generating spi_ip "spi_ip" for QUARTUS_SYNTH
+Info: spislave_0: "spi_ip" instantiated spislave "spislave_0"
+Info: spi_ip: Done "spi_ip" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,71 @@
+Removed Pin From Net: NetName=CC1 Pin=R39-1
+Removed Pin From Net: NetName=GND Pin=R39-2
+Removed Pin From Net: NetName=CC2 Pin=R40-1
+Removed Pin From Net: NetName=GND Pin=R40-2
+Change Footprint: Footprint Not Found RESC1608X55N
+Change Footprint: Footprint Not Found RESC1608X55N
+Change Component Comment : Designator=R39 Old Comment=MCRE000157 New Comment=0603,5.1K,1%
+Change Component Comment : Designator=R40 Old Comment=MCRE000157 New Comment=0603,5.1K,1%
+Change Managed Component Library Link : Designator=R39 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=8273B1C2-6CAB-4719-A4A2-B42FF2715AE9 New ItemGUID= Old RevisionGUID=CF31B077-18A2-41A7-89F2-F6A56831B197 New RevisionGUID=
+Change Managed Component Library Link : Designator=R40 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=8273B1C2-6CAB-4719-A4A2-B42FF2715AE9 New ItemGUID= Old RevisionGUID=CF31B077-18A2-41A7-89F2-F6A56831B197 New RevisionGUID=
+Change component parameters: Designator = "R39" ("R39"); Footprint = "RESC0603X26X15NL03T05"; UniqueID = "\NVWVOMKE\EAJICUZX" ("\NVWVOMKE\EAJICUZX")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/rc0603fr-0710kl/yageo?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.in/datasheet/2/447/PYu_RC_Group_51_RoHS_L_11-1984063.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part #"; Value = "C105580"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manu Part #"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "YAGEO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "603-RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R40" ("R40"); Footprint = "RESC0603X26X15NL03T05"; UniqueID = "\NVWVOMKE\PASVLKUX" ("\NVWVOMKE\PASVLKUX")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/rc0603fr-0710kl/yageo?utm_currency=USD&region=nac"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.in/datasheet/2/447/PYu_RC_Group_51_RoHS_L_11-1984063.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.55mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part #"; Value = "C105580"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manu Part #"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "YAGEO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "603-RC0603FR-0710KL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D"; VariantName = "[No Variations]"
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Added Pin To Net: NetName=GND Pin=R39-1
+Added Pin To Net: NetName=CC1 Pin=R39-2
+Added Pin To Net: NetName=GND Pin=R40-1
+Added Pin To Net: NetName=CC2 Pin=R40-2
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Net: Net with name "GND" already exists
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4

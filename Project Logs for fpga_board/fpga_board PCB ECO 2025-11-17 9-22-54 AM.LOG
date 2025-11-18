@@ -1,0 +1,139 @@
+Removed Pin From Net: NetName=3.3V Pin=R1_1-1
+Removed Pin From Net: NetName=3.3V Pin=R3_1-1
+Removed Pin From Net: NetName=3.3V Pin=R4_1-1
+Removed Pin From Net: NetName=3.3V Pin=R6_1-1
+Removed Pin From Net: NetName=3.3V Pin=R7_1-1
+Removed Pin From Net: NetName=3.3V Pin=R8_1-1
+Removed Pin From Net: NetName=3.3V Pin=R9_1-1
+Removed Member From Class: ClassName=FPGA2 Member=R?
+Removed Member From Class: ClassName=FPGA2 Member=R_?
+Change Footprint: Footprint Not Found FTSH-107-XX-YYY-DV-K-P-TR
+Change Component Designator: OldDesignator=R NewDesignator=R51
+Change Component Designator: OldDesignator=R? NewDesignator=R52
+Change Component Designator: OldDesignator=R? NewDesignator=R57
+Change Component Designator: OldDesignator=U? NewDesignator=U8
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Added Component: Designator=R53(RESC0603(1608)_N)
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "3300.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R54(RESC0603(1608)_N)
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "3300.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R55(RESC0603(1608)_N)
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "3300.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R56(RESC0603(1608)_N)
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "3300.00 Ohm"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin J3-3
+Add Pin To Net: Unknown Pin: Pin J3-4
+Add Pin To Net: Unknown Pin: Pin J3-5
+Add Pin To Net: Unknown Pin: Pin J3-6
+Add Pin To Net: Unknown Pin: Pin J3-7
+Add Pin To Net: Unknown Pin: Pin J3-8
+Added Pin To Net: NetName=JTAG TCK Pin=P1-1
+Added Pin To Net: NetName=JTAG TDO Pin=P1-3
+Added Pin To Net: NetName=JTAG TMS Pin=P1-5
+Added Pin To Net: NetName=JTAG TDI Pin=P1-9
+Added Pin To Net: NetName=3v3 Pin=R1_1-1
+Added Pin To Net: NetName=3v3 Pin=R3_1-1
+Added Pin To Net: NetName=3v3 Pin=R4_1-1
+Added Pin To Net: NetName=3v3 Pin=R6_1-1
+Added Pin To Net: NetName=3v3 Pin=R7_1-1
+Added Pin To Net: NetName=3v3 Pin=R8_1-1
+Added Pin To Net: NetName=3v3 Pin=R9_1-1
+Added Pin To Net: NetName=Addr Bit 4 Pin=R41-1
+Added Pin To Net: NetName=GND Pin=R53-1
+Added Pin To Net: NetName=SW_IN1 Pin=R53-2
+Added Pin To Net: NetName=GND Pin=R54-1
+Added Pin To Net: NetName=SW_IN2 Pin=R54-2
+Added Pin To Net: NetName=GND Pin=R55-1
+Added Pin To Net: NetName=SW_IN3 Pin=R55-2
+Added Pin To Net: NetName=GND Pin=R56-1
+Added Pin To Net: NetName=SW_IN4 Pin=R56-2
+Added Pin To Net: NetName=DEBUG_SWDIO Pin=U6-20
+Added Pin To Net: NetName=DEBUG_SWCLK Pin=U6-21
+Added Pin To Net: NetName=USART1_TX Pin=U6-26
+Added Pin To Net: NetName=USART1_RX Pin=U6-27
+Added Pin To Net: NetName=150MGHZ_CLK Pin=U7-24
+Added Pin To Net: NetName=150NMGHZ_CLK Pin=U7-25
+Added Pin To Net: NetName=MEM_CS Pin=U7-84
+Added Pin To Net: NetName=300MHZ_CLK Pin=R_CLK_5-2
+Added Pin To Net: NetName=300MHZ_CLK Pin=U7-89
+Added Net: Name=300MHZ_CLK
+Added Pin To Net: NetName=300NMHZ_CLK Pin=R_CLK_4-2
+Added Pin To Net: NetName=300NMHZ_CLK Pin=U7-88
+Added Net: Name=300NMHZ_CLK
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Net: Net with name "GND" already exists
+Added Pin To Net: NetName=SPI1 CLK Pin=U6-7
+Added Net: Name=SPI1 CLK
+Added Pin To Net: NetName=SPI1 MISO Pin=U6-12
+Added Net: Name=SPI1 MISO
+Added Pin To Net: NetName=SPI1 MOSI Pin=U6-8
+Added Net: Name=SPI1 MOSI
+Added Pin To Net: NetName=SPI1 NSS Pin=U6-14
+Added Net: Name=SPI1 NSS
+Added Pin To Net: NetName=SPI2 CLK Pin=U6-6
+Added Net: Name=SPI2 CLK
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=MCU Member=Component CJ_? 100nF
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=FPGA2 Member=Component R37 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R38 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R41 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R42 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R44 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R45 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R52 RT0402BRE0750RL
+Added Member To Class: ClassName=IOs Member=Component R53 3K3 5% 0603(1608)
+Added Member To Class: ClassName=IOs Member=Component R54 3K3 5% 0603(1608)
+Added Member To Class: ClassName=IOs Member=Component R55 3K3 5% 0603(1608)
+Added Member To Class: ClassName=IOs Member=Component R56 3K3 5% 0603(1608)
+Added Member To Class: ClassName=MCU Member=Component R57 RC0603FR-0710KL
+Added Member To Class: ClassName=MCU Member=Component R? MCRE000157
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL

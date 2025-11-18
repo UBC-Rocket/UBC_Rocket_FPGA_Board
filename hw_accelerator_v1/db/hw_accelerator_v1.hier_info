@@ -1,0 +1,34 @@
+|hw_accelerator_v1
+LEDS[0] <= leds_chase[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[1] <= leds_chase[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[2] <= leds_chase[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[3] <= leds_chase[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[4] <= leds_chase[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[5] <= leds_chase[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[6] <= leds_chase[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[7] <= leds_chase[7].DB_MAX_OUTPUT_PORT_TYPE
+LEDS[8] <= leds_chase[8].DB_MAX_OUTPUT_PORT_TYPE
+SWITCHES[0] => ~NO_FANOUT~
+SWITCHES[1] => ~NO_FANOUT~
+SWITCHES[2] => ~NO_FANOUT~
+SWITCHES[3] => ~NO_FANOUT~
+CLK_250 => leds_chase[0].CLK
+CLK_250 => leds_chase[1].CLK
+CLK_250 => leds_chase[2].CLK
+CLK_250 => leds_chase[3].CLK
+CLK_250 => leds_chase[4].CLK
+CLK_250 => leds_chase[5].CLK
+CLK_250 => leds_chase[6].CLK
+CLK_250 => leds_chase[7].CLK
+CLK_250 => leds_chase[8].CLK
+reset => leds_chase[0].PRESET
+reset => leds_chase[1].ACLR
+reset => leds_chase[2].ACLR
+reset => leds_chase[3].ACLR
+reset => leds_chase[4].ACLR
+reset => leds_chase[5].ACLR
+reset => leds_chase[6].ACLR
+reset => leds_chase[7].ACLR
+reset => leds_chase[8].ACLR
+
+

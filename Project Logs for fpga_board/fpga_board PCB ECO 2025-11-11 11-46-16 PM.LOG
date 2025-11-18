@@ -1,0 +1,95 @@
+Removed Member From Class: ClassName=MCU Member=C?
+Removed Member From Class: ClassName=FPGA2 Member=R?
+Removed Member From Class: ClassName=Memory Member=R?
+Change Component Designator: OldDesignator=C? NewDesignator=C11
+Change Component Designator: OldDesignator=CJ_? NewDesignator=C12
+Change Component Designator: OldDesignator=CJ_? NewDesignator=C13
+Change Component Designator: OldDesignator=P? NewDesignator=P1
+Change Component Designator: OldDesignator=R NewDesignator=R37
+Change Component Designator: OldDesignator=R? NewDesignator=R38
+Change Component Designator: OldDesignator=R? NewDesignator=R39
+Change Component Designator: OldDesignator=R? NewDesignator=R40
+Change Component Designator: OldDesignator=R? NewDesignator=R41
+Change Component Designator: OldDesignator=R? NewDesignator=R45
+Change Component Designator: OldDesignator=R_? NewDesignator=R42
+Change Component Designator: OldDesignator=R_? NewDesignator=R43
+Change Component Designator: OldDesignator=R_? NewDesignator=R44
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Added Component: Designator=J3(SAMTEC_FTSH-107-01-F-DV-K-P-TR)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "{'manufacturer': u'Samtec Inc.'}"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "FTSH-107-01-F-DV-K-P-TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R36(FP-RT0402-0_35-MFG)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Composition"; Value = "Thin Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "355.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "990.6µm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "63mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "NexarPartId"; Value = "71392720"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape & Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "50O"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "50ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "0.1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "508µm"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Added Pin To Net: NetName=+3V3 Pin=J3-03
+Added Pin To Net: NetName=DEBUG_SWDIO Pin=J3-04
+Added Pin To Net: NetName=GND Pin=J3-05
+Added Pin To Net: NetName=DEBUG_SWCLK Pin=J3-06
+Added Pin To Net: NetName=GND Pin=J3-07
+Added Pin To Net: NetName=DEBUG_SWO Pin=J3-08
+Added Pin To Net: NetName=GND Pin=J3-11
+Added Pin To Net: NetName=NRST Pin=J3-12
+Added Pin To Net: NetName=USART1_RX Pin=J3-13
+Added Pin To Net: NetName=USART1_TX Pin=J3-14
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "3.3V" already exists
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Net: Net with name "GND" already exists
+Added Member To Class: ClassName=MCU Member=Component C11 C1608X5R1H105K080AB
+Added Member To Class: ClassName=MCU Member=Component C12 100nF
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603C105K9PACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? GCG188R91H104MA01D
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0603S102K4RACTU
+Added Member To Class: ClassName=FPGA3 Member=Component C? C0805S472K5RACTU
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=MCU Member=Component J3 FTSH-107-01-F-DV-K-P-TR
+Added Member To Class: ClassName=FPGA2 Member=Component R36 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA2 Member=Component R38 RT0402BRE0750RL
+Added Member To Class: ClassName=MCU Member=Component R39 MCRE000157
+Added Member To Class: ClassName=MCU Member=Component R41 RC0603FR-0710KL
+Added Member To Class: ClassName=Memory Member=Component R42 RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R43 RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R45 RT0402BRE0750RL
