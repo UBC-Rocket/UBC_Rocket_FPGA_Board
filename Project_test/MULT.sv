@@ -129,6 +129,10 @@ module MULT (clk, areset, start, a, b, q, finish);
     always_comb begin
         // defaults
         q_c3 = 32'd0;
+        is_zero_result = 1'b0; 
+        exp_norm = 8'd0;
+        frac_norm = 23'd0;
+        e = 10'd0;
 
         // zero short-circuit
         if (a_zero_s2 || b_zero_s2) begin
