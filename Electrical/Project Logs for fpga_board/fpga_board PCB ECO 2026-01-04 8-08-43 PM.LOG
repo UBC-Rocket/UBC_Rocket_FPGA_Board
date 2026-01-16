@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=VCC Pin=C7-1
+Removed Pin From Net: NetName=GND Pin=C7-2
+Removed Pin From Net: NetName=GND Pin=C8-2
+Removed Pin From Net: NetName=VCC Pin=C9-1
+Removed Pin From Net: NetName=GND Pin=C9-2
+Removed Pin From Net: NetName=GND Pin=C10-2
+Removed Pin From Net: NetName=1.2V Pin=D1-1
+Removed Pin From Net: NetName=GND Pin=D1-2
+Removed Pin From Net: NetName=GND Pin=D2-1
+Removed Pin From Net: NetName=2.5V Pin=D2-3
+Removed Pin From Net: NetName=1.2V Pin=D3-2
+Removed Pin From Net: NetName=2.5V Pin=D4-2
+Removed Pin From Net: NetName=1.2V Pin=MOSFET1-2
+Removed Pin From Net: NetName=2.5V Pin=MOSFET2-2
+Removed Pin From Net: NetName=GND Pin=R2-2
+Removed Pin From Net: NetName=GND Pin=R4-2
+Removed Pin From Net: NetName=GND Pin=R5-2
+Removed Pin From Net: NetName=GND Pin=R8-2
+Removed Pin From Net: NetName=GND Pin=R9-1
+Removed Pin From Net: NetName=GND Pin=R10-1
+Removed Pin From Net: NetName=GND Pin=U3-2
+Removed Pin From Net: NetName=VCC Pin=U3-3
+Removed Pin From Net: NetName=VCC Pin=U3-5
+Removed Pin From Net: NetName=GND Pin=U4-2
+Removed Pin From Net: NetName=VCC Pin=U4-3
+Removed Pin From Net: NetName=VCC Pin=U4-5
+Add component: Footprint Not Found SW_TL3365AF180QG
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=INT3 Pin=U7-54
+Added Pin To Net: NetName=WAKEUP Pin=U7-55
+Added Pin To Net: NetName=CS_3 Pin=U7-59
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

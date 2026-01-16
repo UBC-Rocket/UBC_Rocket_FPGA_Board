@@ -1,0 +1,62 @@
+Removed Pin From Net: NetName=Data Bit 15 Term Pin=R36-2
+Removed Pin From Net: NetName=Addr Bit 8 Term Pin=U7-58
+Removed Pin From Net: NetName=Addr Bit 7 Term Pin=U7-59
+Removed Pin From Net: NetName=Addr Bit 6 Term Pin=U7-60
+Removed Pin From Net: NetName=Addr Bit 5 Term Pin=U7-65
+Removed Pin From Net: NetName=Addr Bit 4 Term Pin=U7-66
+Removed Pin From Net: NetName=Data Bit 14 Term Pin=U7-70
+Removed Pin From Net: NetName=Data Bit 13 Term Pin=U7-71
+Removed Pin From Net: NetName=Data Bit 12 Term Pin=U7-72
+Removed Pin From Net: NetName=Addr Bit 11 Term Pin=U7-80
+Removed Pin From Net: NetName=Addr Bit 12 Term Pin=U7-100
+Removed Member From Class: ClassName=FPGA2 Member=R33
+Removed Member From Class: ClassName=FPGA2 Member=R34
+Removed Member From Class: ClassName=FPGA2 Member=R35
+Removed Member From Class: ClassName=FPGA2 Member=R36
+Removed Member From Class: ClassName=FPGA2 Member=R41
+Removed Member From Class: ClassName=FPGA2 Member=R42
+Removed Member From Class: ClassName=FPGA2 Member=R44
+Removed Member From Class: ClassName=FPGA2 Member=R45
+Removed Member From Class: ClassName=FPGA2 Member=R46
+Removed Member From Class: ClassName=FPGA2 Member=R49
+Removed Member From Class: ClassName=FPGA2 Member=R50
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Add component: Footprint Not Found SW_TL3365AF180QG
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=Addr Bit 4 Term Pin=U7-124
+Added Pin To Net: NetName=Addr Bit 5 Term Pin=U7-125
+Added Pin To Net: NetName=Addr Bit 6 Term Pin=U7-126
+Added Pin To Net: NetName=Addr Bit 7 Term Pin=U7-127
+Added Pin To Net: NetName=Addr Bit 8 Term Pin=U7-128
+Added Pin To Net: NetName=Data Bit 12 Term Pin=U7-132
+Added Pin To Net: NetName=Data Bit 13 Term Pin=U7-133
+Added Pin To Net: NetName=Data Bit 14 Term Pin=U7-135
+Added Pin To Net: NetName=Addr Bit 11 Term Pin=U7-137
+Added Pin To Net: NetName=Addr Bit 12 Term Pin=U7-138
+Change Net Name : Old Net Name=Addr Bit 4 New Net Name=Address Bit 4
+Change Net Name : Old Net Name=Addr Bit 5 New Net Name=Address Bit 5
+Change Net Name : Old Net Name=Addr Bit 6 New Net Name=Address Bit 6
+Change Net Name : Old Net Name=Addr Bit 7 New Net Name=Address Bit 7
+Change Net Name : Old Net Name=Addr Bit 8 New Net Name=Address Bit 8
+Add Net: Net with name "Data Bit 15 Term" already exists
+Add Net: Net with name "GND" already exists
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=FPGA3 Member=Component R33 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R34 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R35 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R36 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R41 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R42 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R44 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R45 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R46 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R49 RT0402BRE0750RL
+Added Member To Class: ClassName=FPGA3 Member=Component R50 RT0402BRE0750RL
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

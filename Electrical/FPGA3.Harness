@@ -1,0 +1,4 @@
+CLK=50MHz CLK,25MHz CLK
+SDRAM CMD=Bank Select 0,Bank Select 1,Row Addr Strobe,Column Addr Strobe,Write Enable,Lower Byte Mask,Higher Byte Mask
+SDRAM_ADDR_2=ADDR 4,ADDR 5,ADDR 6,ADDR 7,ADDR 8,ADDR 12,ADDR 11,ADDR 9,ADDR 10
+SDRAM_DATA_2=Data Bit 12,Data Bit 13,Data Bit 14,Data Bit 15,Data Bit 8

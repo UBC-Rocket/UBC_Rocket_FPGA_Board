@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=SPI MISO Pin=U7-65
+Removed Pin From Net: NetName=SPI SCK Pin=U7-68
+Add component: Footprint Not Found SW_TL3365AF180QG
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=SPI SCK Pin=U7-65
+Added Pin To Net: NetName=SPI MISO Pin=U7-68
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

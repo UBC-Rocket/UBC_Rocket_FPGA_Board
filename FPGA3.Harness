@@ -1,3 +1,0 @@
-CLK=100MHZ CLK,150MHZ CLK,150NMHZ CLK,300MHZ CLK,300NMHZ CLK
-Power In=1.2V In,2.5V In,3.3V In,GND
-SDRAM CMD=Bank Select 0,Bank Select 1,Row Addr Strobe,Column Addr Strobe,Write Enable,Lower Byte Mask,Higher Byte Mask

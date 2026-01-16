@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=INT3 Pin=U7-54
+Removed Pin From Net: NetName=WAKEUP Pin=U7-55
+Add component: Footprint Not Found SW_TL3365AF180QG
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=WAKEUP Pin=U7-54
+Added Pin To Net: NetName=INT3 Pin=U7-55
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

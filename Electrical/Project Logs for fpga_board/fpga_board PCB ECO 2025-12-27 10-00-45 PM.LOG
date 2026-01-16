@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=CLK Input Term Pin=U7-30
+Removed Pin From Net: NetName=Addr Bit 10 Term Pin=U7-54
+Removed Member From Class: ClassName=FPGA2 Member=R48
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Add component: Footprint Not Found SW_TL3365AF180QG
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=CLK Input Term Pin=U7-43
+Added Pin To Net: NetName=Addr Bit 10 Term Pin=U7-144
+Add Net: Net with name "GND" already exists
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=FPGA3 Member=Component R48 RT0402BRE0750RL
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

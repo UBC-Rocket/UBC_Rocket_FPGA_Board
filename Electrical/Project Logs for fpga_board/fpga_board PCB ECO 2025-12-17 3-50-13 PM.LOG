@@ -1,0 +1,142 @@
+Removed Pin From Net: NetName=GND Pin=100MHZ CLK-2
+Removed Pin From Net: NetName=3v3 Pin=100MHZ CLK-4
+Removed Pin From Net: NetName=GND Pin=250 MHZ CLK-3
+Removed Pin From Net: NetName=3v3 Pin=250 MHZ CLK-6
+Removed Pin From Net: NetName=GND Pin=C23-1
+Removed Pin From Net: NetName=\ Pin=C23-2
+Removed Pin From Net: NetName=GND Pin=C24-1
+Removed Pin From Net: NetName=\ Pin=C24-2
+Removed Pin From Net: NetName=3v3 Pin=C_CLK-1
+Removed Pin From Net: NetName=GND Pin=C_CLK-2
+Removed Pin From Net: NetName=GND Pin=C_CLK_1-1
+Removed Pin From Net: NetName=3v3 Pin=C_CLK_1-2
+Removed Pin From Net: NetName=GND Pin=C_CLK_3-1
+Removed Pin From Net: NetName=3v3 Pin=C_CLK_3-2
+Removed Pin From Net: NetName=3v3 Pin=C_CLK_4-1
+Removed Pin From Net: NetName=GND Pin=C_CLK_4-2
+Removed Pin From Net: NetName=GND Pin=C_CLK_t5-1
+Removed Pin From Net: NetName=3v3 Pin=C_CLK_t5-2
+Removed Pin From Net: NetName=3v3 Pin=C_CLKt-1
+Removed Pin From Net: NetName=GND Pin=C_CLKt-2
+Removed Pin From Net: NetName=GND Pin=J3-11
+Removed Pin From Net: NetName=NRST Pin=J3-12
+Removed Pin From Net: NetName=100MHZ_CLK Pin=R_CLK1-1
+Removed Pin From Net: NetName=150MGHZ_CLK Pin=R_CLK2-1
+Removed Pin From Net: NetName=150NMGHZ_CLK Pin=R_CLK3-1
+Removed Pin From Net: NetName=300NMHZ_CLK Pin=R_CLK_4-2
+Removed Pin From Net: NetName=300MHZ_CLK Pin=R_CLK_5-2
+Removed Pin From Net: NetName=3v3 Pin=R_STDBY1-1
+Removed Pin From Net: NetName=3v3 Pin=R_STDBY_2-1
+Removed Pin From Net: NetName=\ Pin=U6-3
+Removed Pin From Net: NetName=GND Pin=U6-4
+Removed Pin From Net: NetName=NRST Pin=U6-5
+Removed Pin From Net: NetName=GND Pin=U9-6
+Removed Pin From Net: NetName=GND Pin=U9-8
+Removed Pin From Net: NetName=3v3 Pin=U9-9
+Removed Pin From Net: NetName=GND Pin=Y1-3
+Removed Pin From Net: NetName=3v3 Pin=Y1-6
+Removed Member From Class: ClassName=FPGA1 Member=100MHZ CLK
+Removed Member From Class: ClassName=FPGA1 Member=250 MHZ CLK
+Removed Member From Class: ClassName=MCU Member=C23
+Removed Member From Class: ClassName=MCU Member=C24
+Removed Member From Class: ClassName=FPGA1 Member=C_CLK_1
+Removed Member From Class: ClassName=FPGA1 Member=C_CLK_3
+Removed Member From Class: ClassName=FPGA1 Member=C_CLK_4
+Removed Member From Class: ClassName=FPGA1 Member=C_CLK_t5
+Removed Member From Class: ClassName=FPGA1 Member=C_CLK
+Removed Member From Class: ClassName=FPGA1 Member=C_CLKt
+Removed Member From Class: ClassName=MCU Member=J3
+Removed Member From Class: ClassName=FPGA1 Member=R_CLK1
+Removed Member From Class: ClassName=FPGA1 Member=R_CLK2
+Removed Member From Class: ClassName=FPGA1 Member=R_CLK3
+Removed Member From Class: ClassName=FPGA1 Member=R_CLK_4
+Removed Member From Class: ClassName=FPGA1 Member=R_CLK_5
+Removed Member From Class: ClassName=FPGA1 Member=R_STDBY1
+Removed Member From Class: ClassName=FPGA1 Member=R_STDBY_2
+Removed Member From Class: ClassName=MCU Member=U6
+Removed Member From Class: ClassName=FPGA1 Member=U9
+Change Component Footprint: Designator=Y2 Old Footprint=FP-ASEMB-MFG New Footprint=FP-ASE-MFG
+Change Component Footprint: Designator=Y1 Old Footprint=JU6_MFG New Footprint=FP-ASE-MFG
+Change Component Comment : Designator=Y2 Old Comment=ASEMB-50.000MHZ-LC-T New Comment=ASE-25.000MHZ-LC-T
+Change Component Comment : Designator=Y1 Old Comment=XLL736300.000000I New Comment=ASE-50.000MHZ-LC-T
+Change Managed Component Library Link : Designator=Y1 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=1507A59B-8410-44BB-8668-15B9F48E6FF1 New ItemGUID=569FFF2E-DB49-407F-B8FE-9EEF0FC97700 Old RevisionGUID=94953C08-C2EE-4D1C-B945-69140BB22614 New RevisionGUID=B7D5A1CC-747A-4290-9004-EB096D9D8E46
+Change Managed Component Library Link : Designator=Y2 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=4C64E241-5352-4F6A-9443-0C2E05F566DF New ItemGUID=440D87D2-E0C3-42B8-B77F-75461F982B4E Old RevisionGUID=E7DBE324-FF7C-48AF-9F79-E01FFDE6DA3D New RevisionGUID=E396A0CF-201C-41C3-A187-AEFB846EE65A
+Change component parameters: Designator = "Y1" ("Y1"); Footprint = "JU6_MFG"; UniqueID = "\ERPHHMCL\JHLKVSMV" ("\ERPHHMCL\JHLKVSMV")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency"; Value = "50MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency Stability"; Value = "50ppm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.047inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Load Capacitance"; Value = "15pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Current"; Value = "19mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = "3.465V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Supply Voltage"; Value = "3.135V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Frequency"; Value = "50 MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Supply Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ASE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "0.098inch"; VariantName = "[No Variations]"
+Change component parameters: Designator = "Y2" ("Y2"); Footprint = "FP-ASEMB-MFG"; UniqueID = "\ERPHHMCL\TMNEOPIR" ("\ERPHHMCL\TMNEOPIR")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency"; Value = "25MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency Stability"; Value = "50ppm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.047inch"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "3.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Load Capacitance"; Value = "15pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "85°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Current"; Value = "13mA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Supply Voltage"; Value = "3.465V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Supply Voltage"; Value = "3.135V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Frequency"; Value = "25 MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Supply Voltage"; Value = "3.3V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "ASE"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "2.5mm"; VariantName = "[No Variations]"
+Add component: Footprint Not Found SON127P800X600X80-9N-D
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Add component: Footprint Not Found SW_TL3365AF180QG
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-1
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-2
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-3
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-4
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-5
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-6
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-7
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-8
+Add Pin To Net: Unknown Pin: Pin FLASH_MEM_1-9
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=GND Pin=Y1-2
+Added Pin To Net: NetName=3v3 Pin=Y1-4
+Add Net: Net with name "FPGA_CLK" already exists
+Add Net: Net with name "FPGA_DO" already exists
+Add Net: Net with name "GND" already exists
+Add Class Member: Failed to add class member : Component FLASH_MEM_1 W25N01GVZEIGTR
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Added Member To Class: ClassName=Memory Member=Component R_? RT0402BRE0710KL
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

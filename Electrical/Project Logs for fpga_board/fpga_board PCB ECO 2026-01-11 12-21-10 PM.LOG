@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=NRST Pin=SW5-2
+Removed Pin From Net: NetName=GND Pin=SW5-3
+Change Component Footprint: Designator=SW5 Old Footprint=FP-2-1977223-2-MFG New Footprint=SW4_PTS815 SJM 250 SMTR LFS_CNK
+Change Component Comment : Designator=SW5 Old Comment=2-1977223-2 New Comment=PTS815 SJM 250 SMTR LFS
+Change Managed Component Library Link : Designator=SW5 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID= Old ItemGUID=9FA723D9-2C90-47BC-B4D9-001C734A55F5 New ItemGUID= Old RevisionGUID=C3BB17E0-CFC7-4095-B825-34792E8ABA7F New RevisionGUID=
+Change component parameters: Designator = "SW5" ("SW5"); Footprint = "FP-2-1977223-2-MFG"; UniqueID = "\NVWVOMKE\EJRKBCGQ" ("\NVWVOMKE\EJRKBCGQ")
+Change component parameters (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2026 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "C&K Components"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PTS815 SJM 250 SMTR LFS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "Type"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=SW5-2
+Added Pin To Net: NetName=NRST Pin=SW5-3

@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=3v3 Pin=C11-2
+Removed Pin From Net: NetName=3v3 Pin=C12-2
+Removed Pin From Net: NetName=3v3 Pin=C13-1
+Removed Pin From Net: NetName=3v3 Pin=C14-2
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Add component: Footprint Not Found SW_TL3365AF180QG
+Added Pin To Net: NetName=VCC Pin=C7-1
+Added Pin To Net: NetName=VCC Pin=C9-1
+Added Pin To Net: NetName=VCC Pin=C11-2
+Added Pin To Net: NetName=VCC Pin=C12-2
+Added Pin To Net: NetName=VCC Pin=C13-1
+Added Pin To Net: NetName=VCC Pin=C14-2
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=VCC Pin=U3-3
+Added Pin To Net: NetName=VCC Pin=U3-5
+Added Pin To Net: NetName=VCC Pin=U4-3
+Added Pin To Net: NetName=VCC Pin=U4-5
+Added Pin To Net: NetName=3v3 Pin=U7-35
+Added Pin To Net: NetName=3v3 Pin=U7-107
+Change Net Name : Old Net Name=1.2V_POWER_OUT New Net Name=1.2V
+Change Net Name : Old Net Name=2.5V_POWER_OUT New Net Name=2.5V 
+Change Net Name : Old Net Name=3v3 New Net Name=2.5V
+Add Net: Net with name "GND" already exists
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

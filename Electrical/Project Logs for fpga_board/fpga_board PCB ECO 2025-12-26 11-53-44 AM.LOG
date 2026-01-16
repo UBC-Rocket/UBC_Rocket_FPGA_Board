@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=IO3 Pin=U7-74
+Removed Pin From Net: NetName=IO2 Pin=U7-75
+Removed Pin From Net: NetName=IO1 Pin=U7-83
+Add component: Footprint Not Found BUS_PCIexpress_x4
+Add component: Footprint Not Found SW_TL3365AF180QG
+Add Pin To Net: Unknown Pin: Pin J2-A30
+Add Pin To Net: Unknown Pin: Pin J2-A32
+Add Pin To Net: Unknown Pin: Pin J2-B30
+Add Pin To Net: Unknown Pin: Pin J2-B32
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin S1-3
+Add Pin To Net: Unknown Pin: Pin S1-4
+Added Pin To Net: NetName=IO3 Pin=U7-98
+Added Pin To Net: NetName=IO2 Pin=U7-99
+Added Pin To Net: NetName=IO1 Pin=U7-100
+Add Net: Net with name "GND" already exists
+Add Class Member: Failed to add class member : Component J2 PCIe-X4
+Add Class Member: Failed to add class member : Component S1 TL3365AF180QG

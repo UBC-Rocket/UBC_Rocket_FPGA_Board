@@ -1,0 +1,7 @@
+Flash SPI=FPGA DO,FLASH MEM CS,FPGA DI
+SDRAM=Data Bit 0,Data Bit 1,Data Bit 2,Data Bit 3,Data Bit 4,Data Bit 5,Data Bit 6,Data Bit 7,Data Bit 9,Data Bit 10,Data Bit 11
+SDRAM CLK=CLK Enable,CLK Input,SDRAM Select
+SDRAM CMD=Bank Select 0,Bank Select 1,Row Addr Strobe,Column Addr Strobe,Write Enable,Lower Byte Mask,Higher Byte Mask
+SDRAM_ADDR=ADDR 0,ADDR 1,ADDR 2,ADDR 3
+SDRAM_ADDR_2=ADDR 4,ADDR 5,ADDR 6,ADDR 7,ADDR 8,ADDR 11,ADDR 12,ADDR 9,ADDR 10
+SDRAM_DATA_2=Data Bit 8,Data Bit 12,Data Bit 13,Data Bit 14,Data Bit 15
