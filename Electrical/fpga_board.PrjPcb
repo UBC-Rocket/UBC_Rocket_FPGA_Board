@@ -565,7 +565,7 @@ UniqueId=88152a9a-fd84-4c61-b681-e65e089ba8ac
 Description=Variant A
 AllowFabrication=0
 ParameterCount=0
-VariationCount=23
+VariationCount=26
 Variation1=Designator=C14|UniqueId=\HPVZLAIR\GFVEEFVG|Kind=1|AlternatePart=
 Variation2=Designator=C22|UniqueId=\HPVZLAIR\NQPKFYLS|Kind=1|AlternatePart=
 Variation3=Designator=C11|UniqueId=\HPVZLAIR\UJFHECNO|Kind=1|AlternatePart=
@@ -589,213 +589,224 @@ Variation20=Designator=R53|UniqueId=\ZYNCTZSG\IXJXGSAK|Kind=1|AlternatePart=
 Variation21=Designator=R54|UniqueId=\ZYNCTZSG\GBYVKUYP|Kind=1|AlternatePart=
 Variation22=Designator=R55|UniqueId=\ZYNCTZSG\CRHBSSDE|Kind=1|AlternatePart=
 Variation23=Designator=R56|UniqueId=\ZYNCTZSG\XSDEAJDE|Kind=1|AlternatePart=
+Variation24=Designator=IC1|UniqueId=\LVDUGTBO\DZHYBYZJ|Kind=1|AlternatePart=
+Variation25=Designator=R112|UniqueId=\LMUTPSYR\XDVZUKXR|Kind=1|AlternatePart=
+Variation26=Designator=R114|UniqueId=\LMUTPSYR\GUBQJNWM|Kind=1|AlternatePart=
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for fpga_board\BOM\Bill of Materials-fpga_board.xlsx
+DocumentPath=Project Outputs for fpga_board\BOM\Bill of Materials-fpga_board(Variant A).xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_bot\components
+DocumentPath=Project Outputs for fpga_board\BOM\Bill of Materials-fpga_board.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_top\components
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_bot\components
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\eda\data
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_top\components
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for fpga_board\Design Rule Check - fpga_board.html
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\eda\data
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_layer\features
+DocumentPath=Project Outputs for fpga_board\Design Rule Check - fpga_board.html
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_overlay\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_layer\features
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_paste\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_overlay\features
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_solder\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_paste\features
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_bot\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\bottom_solder\features
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_top\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_bot\features
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_1\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\comp_+_top\features
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_2\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_1\features
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_3\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_2\features
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_4\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_3\features
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_5\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_4\features
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\drill_plated_bottom_layer-top_layer\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\dielectric_5\features
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\gnd1\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\drill_plated_bottom_layer-top_layer\features
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\gnd2\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\gnd1\features
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\pwr\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\gnd2\features
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\sig\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\pwr\features
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_layer\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\sig\features
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_overlay\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_layer\features
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_paste\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_overlay\features
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_solder\features
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_paste\features
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board-RoundHoles.TXT
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\top_solder\features
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board-SlotHoles.TXT
+DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs for fpga_board\IPC2581\fpga_board.cvg
+DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board.DRR
+DocumentPath=Project Outputs for fpga_board\IPC2581\fpga_board.cvg
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.EXTREP
+DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G1
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G2
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G1
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G3
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G2
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G4
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G3
 DItemRevisionGUID=
 
 [GeneratedDocument35]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBL
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.G4
 DItemRevisionGUID=
 
 [GeneratedDocument36]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBO
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument37]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBP
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument38]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBS
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument39]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GM
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument40]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTL
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GM
 DItemRevisionGUID=
 
 [GeneratedDocument41]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTO
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument42]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTP
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument43]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTS
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument44]
-DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board.LDP
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument45]
-DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.REP
+DocumentPath=Project Outputs for fpga_board\NC Drill\fpga_board.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument46]
-DocumentPath=Project Outputs for fpga_board\ODB\fpga_board.REP
+DocumentPath=Project Outputs for fpga_board\Gerber\fpga_board.REP
 DItemRevisionGUID=
 
 [GeneratedDocument47]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\matrix\matrix
+DocumentPath=Project Outputs for fpga_board\ODB\fpga_board.REP
 DItemRevisionGUID=
 
 [GeneratedDocument48]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\netlists\cadnet\netlist
+DocumentPath=Project Outputs for fpga_board\ODB\odb\matrix\matrix
 DItemRevisionGUID=
 
 [GeneratedDocument49]
-DocumentPath=Project Outputs for fpga_board\Pick Place\Pick Place for fpga_board.csv
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\netlists\cadnet\netlist
 DItemRevisionGUID=
 
 [GeneratedDocument50]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\profile
+DocumentPath=Project Outputs for fpga_board\Pick Place\Pick Place for fpga_board(Variant A).csv
 DItemRevisionGUID=
 
 [GeneratedDocument51]
-DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\stephdr
+DocumentPath=Project Outputs for fpga_board\Pick Place\Pick Place for fpga_board.csv
 DItemRevisionGUID=
 
 [GeneratedDocument52]
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\profile
+DItemRevisionGUID=
+
+[GeneratedDocument53]
+DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\stephdr
+DItemRevisionGUID=
+
+[GeneratedDocument54]
 DocumentPath=Project Outputs for fpga_board\ODB\odb\steps\pcb\layers\drill_plated_bottom_layer-top_layer\tools
 DItemRevisionGUID=
 
